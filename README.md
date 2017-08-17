@@ -1,28 +1,85 @@
-# ArtemisAssess
+# Getting Started
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
+### Installing Atom
 
-## Development server
+## Atom
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Atom was designed with the developer in mind by adding features and customization that help developers write their code more productively.
 
-## Code scaffolding
+* Download the installer for your operating system here: https://atom.io/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## Windows / Linux Installation Instructions
 
-## Build
+* Installing Node.js
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+To install Node on other systems, go to the Node website, then download and install the appropriate installer for your operating system.
 
-## Running unit tests
+## OSX Installation Instructions
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Homebrew Installation
 
-## Running end-to-end tests
+If you do not have Homebrew installed yet, you may install it now by copy and pasting this command:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+> $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-## Further help
+This installs Homebrew on your device.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Next, ensure Homebrew packages are run before the system versions of the same (which may be dated or not what we want) by executing the following:
+
+> $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+
+* Installing Node.js
+
+On OS X systems, install Node.js through Homebrew with the following command in your home directory:
+
+> $ brew install node
+
+Confirm that node and npm (node package manager, installed automatically with Node) are in place by checking the versions (Node should be 4.0.x or higher, npm should be 3.6.x or higher):
+
+> $ node -v
+v6.2.0
+$ npm -v
+3.10.5
+(If you have an older version of Node already installed, upgrade through Homebrew by running $ brew upgrade node.)
+
+## Node.js
+
+# Confirmation
+
+Confirm that node and npm are in place by checking versions:
+
+Run the command $ node -v in your home directory. You should receive an output of 4.0.x or higher.
+Run the command $ npm -v in your home directory. You should receive an output of 3.6.x or higher.
+
+## TypeScript
+
+To install TypeScript, Node.js and npm must be successfully installed first.
+
+# Installing TypeScript
+We need to install two packages to begin working in TypeScript:
+
+* Node TypeScript Package
+
+This contains the compiler and all necessary tools. We'll need Node.js and npm installed on our machines first.
+
+We can install TypeScript globally via npm with the following command:
+
+> $ npm install typescript -g
+
+Then, we'll confirm the installation was successful by running:
+
+> $ tsc -v
+
+We should see something like this in response:
+
+> $ Version 2.1.4
+
+* Atom TypeScript Package
+
+This is technically optional, but we absolutely cannot recommend it enough. This assists Atom in recognizing and properly highlighting TypeScript code, making it much easier to read.
+
+We’ll run the following command to install
+
+> $ apm install atom-typescript
+
+Restart Atom for changes to take place.
