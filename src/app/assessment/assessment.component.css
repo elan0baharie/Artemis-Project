@@ -1,0 +1,11 @@
+.redBox {
+  background-color: red;
+  min-height: 400px;
+  min-width: auto;
+}
+
+.greenBox {
+  background-color: green;
+  min-height: 400px;
+  min-width: auto;
+}

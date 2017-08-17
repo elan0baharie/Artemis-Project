@@ -1,74 +1,92 @@
 <form class="" action="index.html" method="post">
+  <!-- Question Section Begins-->
+  <div class="form-group">
+    <label for=""><!-- Text for Question Begins-->Do you prefer to work with others in a face to face capacity?<!-- Text for Question Ends--></label>
+    <select [(ngModel)]="remoteOneValue" name="remoteOne">
+      <option [value]=4>Agree Strongly</option>
+      <option [value]=2>Moderately Agree</option>
+      <option [value]=1>Moderately Disagree</option>
+      <option [value]=0>Disagree Strongly</option>
+    </select>
+  </div>
+  <!-- Question Section Ends -->
   <div class="form-group">
     <label for="">Do you prefer to work with others in a face to face capacity?</label>
-    <select class="" name="">
-      <option value="">Agree Strongly</option>
-      <option value="">Moderately Agree</option>
-      <option value="">Moderately Disagree</option>
-      <option value="">Disagree Strongly</option>
+    <select [(ngModel)]="remoteTwoValue" name="remoteTwo">
+      <option [value]=4>Agree Strongly</option>
+      <option [value]=2>Moderately Agree</option>
+      <option [value]=1>Moderately Disagree</option>
+      <option [value]=0>Disagree Strongly</option>
     </select>
   </div>
   <div class="form-group">
     <label for="">Do you prefer to work with others in a face to face capacity?</label>
-    <select class="" name="">
-      <option value="">Agree Strongly</option>
-      <option value="">Moderately Agree</option>
-      <option value="">Moderately Disagree</option>
-      <option value="">Disagree Strongly</option>
+    <select [(ngModel)]="remoteThreeValue" name="remoteThree">
+      <option [value]=4>Agree Strongly</option>
+      <option [value]=2>Moderately Agree</option>
+      <option [value]=1>Moderately Disagree</option>
+      <option [value]=0>Disagree Strongly</option>
     </select>
   </div>
   <div class="form-group">
     <label for="">Do you prefer to work with others in a face to face capacity?</label>
-    <select class="" name="">
-      <option value="">Agree Strongly</option>
-      <option value="">Moderately Agree</option>
-      <option value="">Moderately Disagree</option>
-      <option value="">Disagree Strongly</option>
+    <select [(ngModel)]="remoteFourValue" name="remoteFour">
+      <option [value]=4>Agree Strongly</option>
+      <option [value]=2>Moderately Agree</option>
+      <option [value]=1>Moderately Disagree</option>
+      <option [value]=0>Disagree Strongly</option>
     </select>
   </div>
   <div class="form-group">
     <label for="">Do you prefer to work with others in a face to face capacity?</label>
-    <select class="" name="">
-      <option value="">Agree Strongly</option>
-      <option value="">Moderately Agree</option>
-      <option value="">Moderately Disagree</option>
-      <option value="">Disagree Strongly</option>
+    <select [(ngModel)]="strategyOneValue" name="strategyOne">
+      <option [value]=4>Agree Strongly</option>
+      <option [value]=2>Moderately Agree</option>
+      <option [value]=1>Moderately Disagree</option>
+      <option [value]=0>Disagree Strongly</option>
     </select>
   </div>
   <div class="form-group">
     <label for="">Do you prefer to work with others in a face to face capacity?</label>
-    <select class="" name="">
-      <option value="">Agree Strongly</option>
-      <option value="">Moderately Agree</option>
-      <option value="">Moderately Disagree</option>
-      <option value="">Disagree Strongly</option>
+    <select [(ngModel)]="strategyTwoValue" name="strategyTwo">
+      <option [value]=4>Agree Strongly</option>
+      <option [value]=2>Moderately Agree</option>
+      <option [value]=1>Moderately Disagree</option>
+      <option [value]=0>Disagree Strongly</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="">Do you prefer to work with others in a face to face capacity?</label>
+    <select [(ngModel)]="strategyThreeValue" name="strategyThree">
+      <option [value]=4>Agree Strongly</option>
+      <option [value]=2>Moderately Agree</option>
+      <option [value]=1>Moderately Disagree</option>
+      <option [value]=0>Disagree Strongly</option>
     </select>
   </div>
   <div class="form-group">
     <label for="">Do you prefer to work with others in a face to face capacity?</label>
-    <select class="" name="">
-      <option value="">Agree Strongly</option>
-      <option value="">Moderately Agree</option>
-      <option value="">Moderately Disagree</option>
-      <option value="">Disagree Strongly</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="">Do you prefer to work with others in a face to face capacity?</label>
-    <select class="" name="">
-      <option value="">Agree Strongly</option>
-      <option value="">Moderately Agree</option>
-      <option value="">Moderately Disagree</option>
-      <option value="">Disagree Strongly</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="">Do you prefer to work with others in a face to face capacity?</label>
-    <select class="" name="">
-      <option value="">Agree Strongly</option>
-      <option value="">Moderately Agree</option>
-      <option value="">Moderately Disagree</option>
-      <option value="">Disagree Strongly</option>
+    <select [(ngModel)]="strategyFourValue" name="strategyFour">
+      <option [value]=4>Agree Strongly</option>
+      <option [value]=2>Moderately Agree</option>
+      <option [value]=1>Moderately Disagree</option>
+      <option [value]=0>Disagree Strongly</option>
     </select>
   </div>
 </form>
+<button class="btn btn-success" type="button" name="button" (click)="runAssess()">Assess</button>
+<div class="col-md-12">
+  <div class="greenBox col-md-3">
+    <h4>Success Text</h4>
+  </div>
+  <div class="redBox col-md-3">
+    <h4>Fail Text</h4>
+  </div>
+  <div class="greenBox col-md-3">
+    <h4>Success Text</h4>
+  </div>
+  <div class="redBox col-md-3">
+    <h4>Fail Text</h4>
+  </div>
+</div>
