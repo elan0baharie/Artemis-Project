@@ -1,6 +1,6 @@
 # Getting Started
 
-## Mac Instructions
+## OSX Installation Instructions
 
 * Homebrew Installation
 
@@ -13,3 +13,17 @@ This installs Homebrew on your device.
 Next, ensure Homebrew packages are run before the system versions of the same (which may be dated or not what we want) by executing the following:
 
 > $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+
+On OS X systems, install Node.js through Homebrew with the following command in your home directory:
+
+> $ brew install node
+
+Confirm that node and npm (node package manager, installed automatically with Node) are in place by checking the versions (Node should be 4.0.x or higher, npm should be 3.6.x or higher):
+
+> $ node -v
+v6.2.0
+$ npm -v
+3.10.5
+(If you have an older version of Node already installed, upgrade through Homebrew by running $ brew upgrade node.)
+
+Complete the "Working with Node" section below to confirm your installation is functioning correctly.
