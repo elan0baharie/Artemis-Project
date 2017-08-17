@@ -1,4 +1,4 @@
-![Picture](https://github.com/elan0baharie/Artemis-Project/tree/master/src/assets/artemispng.png)
+![Picture](http://static1.squarespace.com/static/57b77304b3db2bfb203fbf3f/t/581e02ade4fcb51e9e0bc4cd/1501254745108/?format=1500w)
 
 # Getting Started
 
