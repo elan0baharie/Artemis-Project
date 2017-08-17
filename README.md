@@ -1,5 +1,9 @@
 # Getting Started
 
+## Windows / Linux Installation Instructions
+
+To install Node on other systems, go to the Node website, then download and install the appropriate installer for your operating system, as seen in the video associated with this lesson.
+
 ## OSX Installation Instructions
 
 * Homebrew Installation
@@ -25,5 +29,3 @@ v6.2.0
 $ npm -v
 3.10.5
 (If you have an older version of Node already installed, upgrade through Homebrew by running $ brew upgrade node.)
-
-Complete the "Working with Node" section below to confirm your installation is functioning correctly.
