@@ -1,3 +1,5 @@
+![Picture](https://github.com/elan0baharie/Artemis-Project/tree/master/src/assets/artemispng.png)
+
 # Getting Started
 
 ### Installing Atom
