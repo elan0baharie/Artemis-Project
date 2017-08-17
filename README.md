@@ -2,6 +2,8 @@
 
 ## Windows / Linux Installation Instructions
 
+* Installing Node.js
+
 To install Node on other systems, go to the Node website, then download and install the appropriate installer for your operating system, as seen in the video associated with this lesson.
 
 ## OSX Installation Instructions
@@ -17,6 +19,8 @@ This installs Homebrew on your device.
 Next, ensure Homebrew packages are run before the system versions of the same (which may be dated or not what we want) by executing the following:
 
 > $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+
+* Installing Node.js
 
 On OS X systems, install Node.js through Homebrew with the following command in your home directory:
 
