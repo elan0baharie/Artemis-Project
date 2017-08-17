@@ -57,9 +57,11 @@ This contains the compiler and all necessary tools. We'll need Node.js and npm i
 We can install TypeScript globally via npm with the following command:
 
 > $ npm install typescript -g
+
 Then, we'll confirm the installation was successful by running:
 
 > $ tsc -v
+
 We should see something like this in response:
 
 > $ Version 2.1.4
