@@ -4,7 +4,7 @@
 
 * Installing Node.js
 
-To install Node on other systems, go to the Node website, then download and install the appropriate installer for your operating system, as seen in the video associated with this lesson.
+To install Node on other systems, go to the Node website, then download and install the appropriate installer for your operating system.
 
 ## OSX Installation Instructions
 
@@ -52,7 +52,7 @@ We need to install two packages to begin working in TypeScript:
 
 * Node TypeScript Package
 
-This contains the compiler and all necessary tools. We'll need Node.js and npm installed on our machines first, though. (If you've completed our previous JavaScript coursework on your machine, you should already have these tools. If not, revisit the Installing Node lesson) .
+This contains the compiler and all necessary tools. We'll need Node.js and npm installed on our machines first.
 
 We can install TypeScript globally via npm with the following command:
 
