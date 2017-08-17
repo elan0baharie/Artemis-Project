@@ -6,7 +6,7 @@
     "Elan Baharie <0elan1@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/elan0baharie/Artemis-Project",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,5 +16,6 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7"
-  }
+  },
+  "private": true
 }
