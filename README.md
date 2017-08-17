@@ -1,5 +1,13 @@
 # Getting Started
 
+### Installing Atom
+
+## Atom
+
+Atom was designed with the developer in mind by adding features and customization that help developers write their code more productively.
+
+* Download the installer for your operating system here: https://atom.io/
+
 ## Windows / Linux Installation Instructions
 
 * Installing Node.js
