@@ -33,3 +33,43 @@ v6.2.0
 $ npm -v
 3.10.5
 (If you have an older version of Node already installed, upgrade through Homebrew by running $ brew upgrade node.)
+
+## Node.js
+
+# Confirmation
+
+Confirm that node and npm are in place by checking versions:
+
+Run the command $ node -v in your home directory. You should receive an output of 4.0.x or higher.
+Run the command $ npm -v in your home directory. You should receive an output of 3.6.x or higher.
+
+## TypeScript
+
+To install TypeScript, Node.js and npm must be successfully installed first.
+
+# Installing TypeScript
+We need to install two packages to begin working in TypeScript:
+
+* Node TypeScript Package
+
+This contains the compiler and all necessary tools. We'll need Node.js and npm installed on our machines first, though. (If you've completed our previous JavaScript coursework on your machine, you should already have these tools. If not, revisit the Installing Node lesson) .
+
+We can install TypeScript globally via npm with the following command:
+
+> $ npm install typescript -g
+Then, we'll confirm the installation was successful by running:
+
+> $ tsc -v
+We should see something like this in response:
+
+> $ Version 2.1.4
+
+* Atom TypeScript Package
+
+This is technically optional, but we absolutely cannot recommend it enough. This assists Atom in recognizing and properly highlighting TypeScript code, making it much easier to read.
+
+We’ll run the following command to install
+
+> $ apm install atom-typescript
+
+Restart Atom for changes to take place.
