@@ -6,34 +6,46 @@
 
 ## Table of Contents
 
-1. Getting Started
-    1. Installing Atom text editor
+1. [Getting Started](#a)
+    1. [Installing Atom text editor](#b)
 
-        * Windows / Linux Installation Instructions
+        * [Windows / Linux Installation Instructions](#c)
 
-          * Installing Node.js
+          * [Installing Node.js](#d)
 
-        * OSX Installation Instructions
+        * [OSX Installation Instructions](#e)
 
-          * Homebrew Installation
+          * [Homebrew Installation](#f)
 
-          * Installing Node.js
+          * [Installing Node.js](#g)
 
-    2. Confirming Node.js installation
+    2. [Confirming Node.js installation](#h)
 
-    3. Installing Typescript
+    3. [Installing Git](#i)
 
-        1. Node TypeScript Package
+        * [Installing Git for Windows](#j)
 
-        2. Atom TypeScript Package
+        * [Installing Git for Mac](#k)
 
-    4. 
+    3. [Installing Typescript](#l)
 
+        1. [Node TypeScript Package](#m)
 
+        2. [Atom TypeScript Package](#n)
 
-# Getting Started
+2. [Viewing this Application](#o)
 
-## Installing Atom
+    1. [Clone down this application locally](#p)
+
+    2. [Install the required dependencies](#q)
+
+    3. [Take the application live](#r)
+
+3. [Editing this Application](#s)
+
+# <a name="a"></a>Getting Started
+
+## <a name="b"></a> Installing Atom
 
 ### Atom
 
@@ -41,15 +53,15 @@ Atom was designed with the developer in mind by adding features and customizatio
 
 * Download the installer for your operating system here: https://atom.io/
 
-## Windows / Linux Installation Instructions
+## <a name="c"></a> Windows / Linux Installation Instructions
 
-* Installing Node.js
+* <a name="d"></a> Installing Node.js
 
 To install Node on other systems, go to the Node website, then download and install the appropriate installer for your operating system.
 
-## OSX Installation Instructions
+## <a name="e"></a> OSX Installation Instructions
 
-* Homebrew Installation
+* <a name="f"></a> Homebrew Installation
 
 If you do not have Homebrew installed yet, you may install it now by copy and pasting this command:
 
@@ -61,7 +73,7 @@ Next, ensure Homebrew packages are run before the system versions of the same (w
 
 > $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
 
-* Installing Node.js
+## <a name="g"></a> Installing Node.js
 
 On OS X systems, install Node.js through Homebrew with the following command in your home directory:
 
@@ -80,9 +92,7 @@ v6.2.0
 
 > $ brew upgrade node
 
-)
-
-# Node.js Confirmation
+# <a name="h"></a> Node.js Confirmation
 
 Confirm that node and npm are in place by checking versions:
 
@@ -98,7 +108,21 @@ Run the command
 
 in your home directory. You should receive an output of 3.6.x or higher.
 
-# TypeScript
+# <a name="i"></a> Installing Git
+
+## <a name="j"></a> Installing Git for Windows
+
+* Download the installer to enable GitBASH on your standard command line: https://git-for-windows.github.io/
+
+## <a name="k"></a> Installing Git for Mac
+
+> $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+> $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+
+> $ brew install git
+
+# <a name="l"></a> TypeScript
 
 To install TypeScript, Node.js and npm must be successfully installed first.
 
@@ -106,7 +130,7 @@ To install TypeScript, Node.js and npm must be successfully installed first.
 
 We need to install two packages to begin working in TypeScript:
 
-* Node TypeScript Package
+* <a name="m"></a> Node TypeScript Package
 
 This contains the compiler and all necessary tools. We'll need Node.js and npm installed on our machines first.
 
@@ -122,7 +146,7 @@ We should see something like this in response:
 
 > $ Version 2.1.4
 
-* Atom TypeScript Package
+* <a name="n"></a> Atom TypeScript Package
 
 This is technically optional, but we absolutely cannot recommend it enough. This assists Atom in recognizing and properly highlighting TypeScript code, making it much easier to read.
 
@@ -131,3 +155,73 @@ We’ll run the following command to install
 > $ apm install atom-typescript
 
 Restart Atom for changes to take place.
+
+- - - -
+
+# <a name="o"></a> Viewing the application
+
+## <a name="p"></a> Cloning the application locally
+
+* Start by clicking on the Clone or Download button on this page: ![Picture](https://puu.sh/xdvNF/e0ddabb9f7.png)
+
+* Copy the link and in your terminal enter the following:
+
+> $ git clone https://github.com/elan0baharie/Artemis-Project.git
+
+This clones the project into your current directory.
+
+* In your terminal navigate to the project:
+
+> $ cd Artemis-Project
+
+* <a name="q"></a> To install the required dependencies, open your terminal and run:
+
+> $ npm install
+
+> $ bower install
+
+* <a name="r"></a> Take the application live by running:
+
+> $ ng serve
+
+This will be hosted locally at localhost:4200 in your browser.
+
+To stop hosting locally, use the command <kbd>Ctrl + C</kbd> on Windows or <kbd>⌘ + C</kbd> on OS X
+
+- - - -
+
+# <a name="s"></a> Editing the Application
+
+* Make sure you're in the project folder in your terminal
+
+* Open the application in your Atom text editor with the following command:
+
+> $ atom .
+
+>> Note that there is a period following the atom command. This is telling the terminal to open all of the files in your current directory under atom.
+
+This opens all files in the current folder in your Atom text editor
+
+* Try modifying an assessment question:
+
+  * In this project folder navigate to src/app/assessment like so:
+
+  ![Picture](https://puu.sh/xdxoF/0e19087075.png)
+
+  * Click on the assessment.component.html file, this will open it in a tab on Atom like so:
+
+  ![Picture](https://puu.sh/xdyyj/0eab4baa8a.png)
+
+  * Let's look at the first question in the assessment:
+
+  ![Picture](https://puu.sh/xdyE7/da01965429.png)
+
+  * You can change the text on this line here:
+
+  ![Picture](http://puu.sh/xdyGF/c9b4ad7d86.png)
+
+  * Save your changes by hitting <kbd>Ctrl + S</kbd> on Windows or <kbd>⌘ + S</kbd> on OS X
+
+  * Host your application locally to see your changes reflected live at localhost:4200 :
+
+  > $ ng serve
