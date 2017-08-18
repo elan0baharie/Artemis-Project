@@ -27,11 +27,15 @@
 
         2. Atom TypeScript Package
 
-2. Viewing and Editing this Application
+2. Viewing this Application
 
     1. Clone down this application locally
 
+    2. Install the required dependencies
 
+    3. Take the application live
+
+3. Editing this Application
 
 # Getting Started
 
@@ -138,4 +142,24 @@ Restart Atom for changes to take place.
 
 ## Cloning the application locally
 
-Start by clicking on the Clone or Download button on this page: ![Picture](https://puu.sh/xdvNF/e0ddabb9f7.png)
+* Start by clicking on the Clone or Download button on this page: ![Picture](https://puu.sh/xdvNF/e0ddabb9f7.png)
+
+* Copy the link and in your terminal enter the following:
+
+> git clone https://github.com/elan0baharie/Artemis-Project.git
+
+This clones the project into your current directory.
+
+* In your terminal navigate to the project:
+
+> cd Artemis-Project
+
+* To install the required dependencies open your terminal and run:
+
+> $ npm install
+
+* Take the application live by running:
+
+> $ ng serve
+
+This will be hosted locally at localhost:4200 in your browser
