@@ -67,7 +67,19 @@ Next, ensure Homebrew packages are run before the system versions of the same (w
 
 > $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
 
-* Installing Node.js
+## Installing Git for Windows
+
+* Download the installer to enable GitBASH on your standard command line: https://git-for-windows.github.io/
+
+## Installing Git for Mac
+
+> $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+> $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+
+> $ brew install git
+
+## Installing Node.js
 
 On OS X systems, install Node.js through Homebrew with the following command in your home directory:
 
@@ -160,6 +172,8 @@ This clones the project into your current directory.
 
 > $ npm install
 
+> $ bower install
+
 * Take the application live by running:
 
 > $ ng serve
@@ -177,6 +191,8 @@ To stop hosting locally, use the command <kbd>Ctrl + C</kbd> on Windows or <kbd>
 * Open the application in your Atom text editor with the following command:
 
 > $ atom .
+
+>> Note that there is a period following the atom command. This is telling the terminal to open all of the files in your current directory under atom.
 
 This opens all files in the current folder in your Atom text editor
 
