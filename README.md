@@ -9,17 +9,21 @@
 1. Getting Started
     1. Installing Atom text editor
 
-      * Windows / Linux Installation Instructions
+        * Windows / Linux Installation Instructions
 
-        * Installing Node.js
+          * Installing Node.js
 
-      * OSX Installation Instructions
+        * OSX Installation Instructions
 
-        * Homebrew Installation
+          * Homebrew Installation
 
-        * Installing Node.js
+          * Installing Node.js
 
-2.
+    2. Confirming Node.js installation
+
+    3. Installing Typescript
+
+    
 
 # Getting Started
 
@@ -66,7 +70,11 @@ v6.2.0
 > $ npm -v
 
 3.10.5
-(If you have an older version of Node already installed, upgrade through Homebrew by running $ brew upgrade node.)
+(If you have an older version of Node already installed, upgrade through Homebrew by running
+
+> $ brew upgrade node
+
+)
 
 # Node.js Confirmation
 
