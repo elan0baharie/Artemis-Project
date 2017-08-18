@@ -72,44 +72,63 @@ export class AssessmentComponent implements OnInit {
     // }
   }
 
+  goSlideOne() {
+    this.showSlideOne = true;
+    this.showSlideTwo = false;
+  }
+
   goSlideTwo() {
     this.showSlideOne = false;
     this.showSlideTwo = true;
+    this.showSlideThree = false;
   }
 
   goSlideThree() {
     this.showSlideTwo = false;
     this.showSlideThree = true;
+    this.showSlideFour = false;
   }
 
   goSlideFour() {
     this.showSlideThree = false;
     this.showSlideFour = true;
+    this.showSlideFive = false;
+
   }
 
   goSlideFive() {
     this.showSlideFour = false;
     this.showSlideFive = true;
+    this.showSlideSix = false;
+
   }
 
   goSlideSix() {
     this.showSlideFive = false;
     this.showSlideSix = true;
+    this.showSlideSeven = false;
+
   }
 
   goSlideSeven() {
     this.showSlideSix = false;
     this.showSlideSeven = true;
+    this.showSlideEight = false;
+
   }
 
   goSlideEight() {
     this.showSlideSeven = false;
     this.showSlideEight = true;
+    this.showSlideNine = false;
+
   }
 
   goSlideNine() {
     this.showSlideEight = false;
     this.showSlideNine = true;
+    this.showSlideTen = false;
+
   }
 
   goSlideTen() {
