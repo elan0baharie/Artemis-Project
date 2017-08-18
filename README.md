@@ -27,7 +27,9 @@
 
         2. Atom TypeScript Package
 
-    4. 
+2. Viewing and Editing this Application
+
+    1. Clone down this application locally
 
 
 
@@ -131,3 +133,9 @@ We’ll run the following command to install
 > $ apm install atom-typescript
 
 Restart Atom for changes to take place.
+
+# Viewing and Editing the application
+
+## Cloning the application locally
+
+Start by clicking on the Clone or Download button on this page: ![Picture](https://puu.sh/xdvNF/e0ddabb9f7.png)
