@@ -7,6 +7,7 @@ import { HireQuestion } from '../hire-question.model';
   templateUrl: './assessment.component.html',
   styleUrls: ['./assessment.component.css']
 })
+
 export class AssessmentComponent implements OnInit {
   public remoteScore: number;
   public strategyScore: number;
@@ -40,7 +41,7 @@ export class AssessmentComponent implements OnInit {
     console.log("Your remote score is " + this.remoteScore + " out of 16.");
     console.log("Your strategy score is " + this.strategyScore + " out of 16.");
     if(this.remoteScore >= 10) {
-      location.href = 'http://www.facebook.com';
+      location.href = 'http://www.artemisconnection.com/application';
     } else if (this.remoteScore >= 6 && this.remoteScore < 10) {
       location.href = 'http://www.twitter.com';
     } else {
