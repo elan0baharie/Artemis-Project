@@ -9,15 +9,15 @@
 1. Getting Started
     1. Installing Atom text editor
 
-  * Windows / Linux Installation Instructions
+      * Windows / Linux Installation Instructions
 
-    * Installing Node.js
+        * Installing Node.js
 
-  * OSX Installation Instructions
+      * OSX Installation Instructions
 
-    * Homebrew Installation
+        * Homebrew Installation
 
-    * Installing Node.js
+        * Installing Node.js
 
 2.
 
