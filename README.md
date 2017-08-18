@@ -166,6 +166,8 @@ This clones the project into your current directory.
 
 This will be hosted locally at localhost:4200 in your browser.
 
+To stop hosting locally, use the command <kbd>Ctrl + C</kbd> on Windows or <kbd>⌘ + C</kbd> on OS X
+
 - - - -
 
 # Editing the Application
@@ -196,4 +198,8 @@ This opens all files in the current folder in your Atom text editor
 
   ![Picture](http://puu.sh/xdyGF/c9b4ad7d86.png)
 
-  
+  * Save your changes by hitting <kbd>Ctrl + S</kbd> on Windows or <kbd>⌘ + S</kbd> on OS X
+
+  * Host your application locally to see your changes reflected live at localhost:4200 :
+
+  > $ ng serve
