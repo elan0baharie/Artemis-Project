@@ -20,9 +20,11 @@ export class AssessmentComponent implements OnInit {
   public strategyFourValue: string;
 
 
-  constructor() { }
+  constructor(public showAssess: boolean, public showResponse: boolean) { }
 
   ngOnInit() {
+    this.showAssess = true;
+    this.showResponse = false;
   }
 
   runAssess(){
