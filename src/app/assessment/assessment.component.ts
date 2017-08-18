@@ -40,7 +40,7 @@ export class AssessmentComponent implements OnInit {
     console.log("Your remote score is " + this.remoteScore + " out of 16.");
     console.log("Your strategy score is " + this.strategyScore + " out of 16.");
     if(this.remoteScore >= 10) {
-      return console.log("Strong Remote Score");
+      location.href = 'http://www.facebook.com';
     } else if (this.remoteScore >= 6 && this.remoteScore < 10) {
       return console.log("Moderate Remote Score");
     } else {

@@ -1,23 +1,46 @@
 <!-- image  -->
   <div class="image"></div>
 
-<div id="bootstrap-overrides" class="container"> <!-- For styling  -->
-  <h1>Is remote work right for you?</h1> <!-- Heading  -->
+<div class="container" style="padding-bottom: 20px;"> <!-- For styling  -->
+  <h1 style="text-align:center;">Is remote work right for you?</h1> <!-- Heading  -->
     <form class="" action="index.html" method="post">  <!-- Start of the form  -->
           <ol> <!-- ol(ordered List) adds numbers to each of the questions  -->
             <!-- Question # 1  -->
-            <li>
-               <div class="form-group">
-                <label class="text">When given the choice, I prefer to be given a task list to run with.</label>
-                <br>
-                <select [(ngModel)]="remoteOneValue" class="form-group" name="remoteOne">
-                  <option [value]=4>Agree Strongly</option>
-                  <option [value]=2>Moderately Agree</option>
-                  <option [value]=1>Moderately Disagree</option>
-                  <option [value]=0>Disagree Strongly</option>
-                </select>
+
+
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                 <label class="text">When given the choice, I prefer to be given a task list to run with.</label>
+
+               </div>
               </div>
-            </li>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>
+                  <input type="radio" name="remoteOneValue" ng-model="remoteOneValue" value="4">
+                  Strongly Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" ng-model="remoteOneValue" value="2">
+                  Moderately Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" ng-model="remoteOneValue" value="1">
+                  Moderately Disagree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" ng-model="remoteOneValue" value="0">
+                  Strongly Disagree
+                </label>
+              </div>
+            </div>
+
+
+
+
 
             <!-- Question # 2  -->
 
