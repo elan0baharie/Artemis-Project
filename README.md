@@ -49,11 +49,11 @@ Atom was designed with the developer in mind by adding features and customizatio
 
 ## <a name="c"></a> Windows / Linux Installation Instructions
 
-* Installing Node.js
+* <a name="d"> Installing Node.js
 
 To install Node on other systems, go to the Node website, then download and install the appropriate installer for your operating system.
 
-## <a name="d"></a> OSX Installation Instructions
+## </a> OSX Installation Instructions
 
 * Homebrew Installation
 
