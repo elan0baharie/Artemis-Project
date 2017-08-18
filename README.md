@@ -4,6 +4,24 @@
 
 * A hiring assessment application to determine whether an applicant is suitable for working remotely and fulfilling a strategy consultant role.
 
+## Table of Contents
+
+1. Getting Started
+
+  i. Installing Atom text editor
+
+  * Windows / Linux Installation Instructions
+
+    * Installing Node.js
+
+  * OSX Installation Instructions
+
+    * Homebrew Installation
+
+    * Installing Node.js
+
+2.
+
 # Getting Started
 
 ## Installing Atom
@@ -43,8 +61,11 @@ On OS X systems, install Node.js through Homebrew with the following command in 
 Confirm that node and npm (node package manager, installed automatically with Node) are in place by checking the versions (Node should be 4.0.x or higher, npm should be 3.6.x or higher):
 
 > $ node -v
+
 v6.2.0
-$ npm -v
+
+> $ npm -v
+
 3.10.5
 (If you have an older version of Node already installed, upgrade through Homebrew by running $ brew upgrade node.)
 
@@ -69,6 +90,7 @@ in your home directory. You should receive an output of 3.6.x or higher.
 To install TypeScript, Node.js and npm must be successfully installed first.
 
 ## Installing TypeScript
+
 We need to install two packages to begin working in TypeScript:
 
 * Node TypeScript Package
