@@ -23,7 +23,13 @@
 
     3. Installing Typescript
 
-    
+        1. Node TypeScript Package
+
+        2. Atom TypeScript Package
+
+    4. 
+
+
 
 # Getting Started
 
