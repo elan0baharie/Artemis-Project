@@ -6,36 +6,36 @@
 
 ## Table of Contents
 
-1. Getting Started[link text](#a)
-    1. Installing Atom text editor[link text](#b)
+1. [Getting Started](#a)
+    1. [Installing Atom text editor](#b)
 
-        * Windows / Linux Installation Instructions[link text](#c)
+        * [Windows / Linux Installation Instructions](#c)
 
-          * Installing Node.js[link text](#d)
+          * [Installing Node.js](#d)
 
-        * OSX Installation Instructions[link text](#e)
+        * [OSX Installation Instructions](#e)
 
-          * Homebrew Installation[link text](#f)
+          * [Homebrew Installation](#f)
 
-          * Installing Node.js[link text](#g)
+          * [Installing Node.js](#g)
 
-    2. Confirming Node.js installation[link text](#h)
+    2. [Confirming Node.js installation](#h)
 
-    3. Installing Typescript[link text](#i)
+    3. [Installing Typescript](#i)
 
-        1. Node TypeScript Package[link text](#j)
+        1. [Node TypeScript Package](#j)
 
-        2. Atom TypeScript Package[link text](#k)
+        2. [Atom TypeScript Package](#k)
 
-2. Viewing this Application[link text](#l)
+2. [Viewing this Application](#l)
 
-    1. Clone down this application locally[link text](#m)
+    1. [Clone down this application locally](#m)
 
-    2. Install the required dependencies[link text](#n)
+    2. [Install the required dependencies](#n)
 
-    3. Take the application live[link text](#o)
+    3. [Take the application live](#o)
 
-3. Editing this Application[link text](#p)
+3. [Editing this Application](#p)
 
 # <a name="a"></a>Getting Started
 
