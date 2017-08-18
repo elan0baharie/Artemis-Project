@@ -7,23 +7,19 @@
 ## Table of Contents
 
 1. Getting Started
+    1. Installing Atom text editor
 
-  1. Installing Atom text editor
+      * Windows / Linux Installation Instructions
 
-  * Windows / Linux Installation Instructions
+        * Installing Node.js
 
-    * Installing Node.js
+      * OSX Installation Instructions
 
-  * OSX Installation Instructions
+        * Homebrew Installation
 
-    * Homebrew Installation
+        * Installing Node.js
 
-    * Installing Node.js
-
-    1. A numbered list
-                  1. A nested numbered list
-                  2. Which is numbered
-              2. Which is numbered
+2.
 
 # Getting Started
 
