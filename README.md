@@ -138,7 +138,9 @@ We’ll run the following command to install
 
 Restart Atom for changes to take place.
 
-# Viewing and Editing the application
+- - - -
+
+# Viewing the application
 
 ## Cloning the application locally
 
@@ -146,15 +148,15 @@ Restart Atom for changes to take place.
 
 * Copy the link and in your terminal enter the following:
 
-> git clone https://github.com/elan0baharie/Artemis-Project.git
+> $ git clone https://github.com/elan0baharie/Artemis-Project.git
 
 This clones the project into your current directory.
 
 * In your terminal navigate to the project:
 
-> cd Artemis-Project
+> $ cd Artemis-Project
 
-* To install the required dependencies open your terminal and run:
+* To install the required dependencies, open your terminal and run:
 
 > $ npm install
 
@@ -162,4 +164,36 @@ This clones the project into your current directory.
 
 > $ ng serve
 
-This will be hosted locally at localhost:4200 in your browser
+This will be hosted locally at localhost:4200 in your browser.
+
+- - - -
+
+# Editing the Application
+
+* Make sure you're in the project folder in your terminal
+
+* Open the application in your Atom text editor with the following command:
+
+> $ atom .
+
+This opens all files in the current folder in your Atom text editor
+
+* Try modifying an assessment question:
+
+  * In this project folder navigate to src/app/assessment like so:
+
+  ![Picture](https://puu.sh/xdxoF/0e19087075.png)
+
+  * Click on the assessment.component.html file, this will open it in a tab on Atom like so:
+
+  ![Picture](https://puu.sh/xdyyj/0eab4baa8a.png)
+
+  * Let's look at the first question in the assessment:
+
+  ![Picture](https://puu.sh/xdyE7/da01965429.png)
+
+  * You can change the text on this line here:
+
+  ![Picture](http://puu.sh/xdyGF/c9b4ad7d86.png)
+
+  
