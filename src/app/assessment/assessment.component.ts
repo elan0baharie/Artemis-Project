@@ -42,9 +42,9 @@ export class AssessmentComponent implements OnInit {
     if(this.remoteScore >= 10) {
       location.href = 'http://www.facebook.com';
     } else if (this.remoteScore >= 6 && this.remoteScore < 10) {
-      return console.log("Moderate Remote Score");
+      location.href = 'http://www.twitter.com';
     } else {
-      return console.log("Weak Remote Score");
+      location.href = 'http://www.Apple.com';
     }
   }
 
