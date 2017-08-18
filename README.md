@@ -21,21 +21,27 @@
 
     2. [Confirming Node.js installation](#h)
 
-    3. [Installing Typescript](#i)
+    3. [Installing Git](#i)
 
-        1. [Node TypeScript Package](#j)
+        * [Installing Git for Windows](#j)
 
-        2. [Atom TypeScript Package](#k)
+        * [Installing Git for Mac](#k)
 
-2. [Viewing this Application](#l)
+    3. [Installing Typescript](#l)
 
-    1. [Clone down this application locally](#m)
+        1. [Node TypeScript Package](#m)
 
-    2. [Install the required dependencies](#n)
+        2. [Atom TypeScript Package](#n)
 
-    3. [Take the application live](#o)
+2. [Viewing this Application](#o)
 
-3. [Editing this Application](#p)
+    1. [Clone down this application locally](#p)
+
+    2. [Install the required dependencies](#q)
+
+    3. [Take the application live](#r)
+
+3. [Editing this Application](#s)
 
 # <a name="a"></a>Getting Started
 
@@ -49,13 +55,13 @@ Atom was designed with the developer in mind by adding features and customizatio
 
 ## <a name="c"></a> Windows / Linux Installation Instructions
 
-* <a name="d"> Installing Node.js
+* <a name="d"></a> Installing Node.js
 
 To install Node on other systems, go to the Node website, then download and install the appropriate installer for your operating system.
 
-## </a> OSX Installation Instructions
+## <a name="e"></a> OSX Installation Instructions
 
-* Homebrew Installation
+* <a name="f"></a> Homebrew Installation
 
 If you do not have Homebrew installed yet, you may install it now by copy and pasting this command:
 
@@ -67,19 +73,7 @@ Next, ensure Homebrew packages are run before the system versions of the same (w
 
 > $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
 
-## Installing Git for Windows
-
-* Download the installer to enable GitBASH on your standard command line: https://git-for-windows.github.io/
-
-## Installing Git for Mac
-
-> $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-> $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
-
-> $ brew install git
-
-## Installing Node.js
+## <a name="g"></a> Installing Node.js
 
 On OS X systems, install Node.js through Homebrew with the following command in your home directory:
 
@@ -98,9 +92,7 @@ v6.2.0
 
 > $ brew upgrade node
 
-)
-
-# Node.js Confirmation
+# <a name="h"></a> Node.js Confirmation
 
 Confirm that node and npm are in place by checking versions:
 
@@ -116,7 +108,21 @@ Run the command
 
 in your home directory. You should receive an output of 3.6.x or higher.
 
-# TypeScript
+# <a name="i"></a> Installing Git
+
+## <a name="j"></a> Installing Git for Windows
+
+* Download the installer to enable GitBASH on your standard command line: https://git-for-windows.github.io/
+
+## <a name="k"></a> Installing Git for Mac
+
+> $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+> $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
+
+> $ brew install git
+
+# <a name="l"></a> TypeScript
 
 To install TypeScript, Node.js and npm must be successfully installed first.
 
@@ -124,7 +130,7 @@ To install TypeScript, Node.js and npm must be successfully installed first.
 
 We need to install two packages to begin working in TypeScript:
 
-* Node TypeScript Package
+* <a name="m"></a> Node TypeScript Package
 
 This contains the compiler and all necessary tools. We'll need Node.js and npm installed on our machines first.
 
@@ -140,7 +146,7 @@ We should see something like this in response:
 
 > $ Version 2.1.4
 
-* Atom TypeScript Package
+* <a name="n"></a> Atom TypeScript Package
 
 This is technically optional, but we absolutely cannot recommend it enough. This assists Atom in recognizing and properly highlighting TypeScript code, making it much easier to read.
 
@@ -152,9 +158,9 @@ Restart Atom for changes to take place.
 
 - - - -
 
-# Viewing the application
+# <a name="o"></a> Viewing the application
 
-## Cloning the application locally
+## <a name="p"></a> Cloning the application locally
 
 * Start by clicking on the Clone or Download button on this page: ![Picture](https://puu.sh/xdvNF/e0ddabb9f7.png)
 
@@ -168,13 +174,13 @@ This clones the project into your current directory.
 
 > $ cd Artemis-Project
 
-* To install the required dependencies, open your terminal and run:
+* <a name="q"></a> To install the required dependencies, open your terminal and run:
 
 > $ npm install
 
 > $ bower install
 
-* Take the application live by running:
+* <a name="r"></a> Take the application live by running:
 
 > $ ng serve
 
@@ -184,7 +190,7 @@ To stop hosting locally, use the command <kbd>Ctrl + C</kbd> on Windows or <kbd>
 
 - - - -
 
-# Editing the Application
+# <a name="s"></a> Editing the Application
 
 * Make sure you're in the project folder in your terminal
 
