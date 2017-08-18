@@ -7,7 +7,7 @@
 ## Table of Contents
 
 1. Getting Started
-  1. Installing Atom text editor
+    1. Installing Atom text editor
 
   * Windows / Linux Installation Instructions
 
