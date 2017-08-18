@@ -6,40 +6,40 @@
 
 ## Table of Contents
 
-1. Getting Started
-    1. Installing Atom text editor
+1. Getting Started[link text](#a)
+    1. Installing Atom text editor[link text](#b)
 
-        * Windows / Linux Installation Instructions
+        * Windows / Linux Installation Instructions[link text](#c)
 
-          * Installing Node.js
+          * Installing Node.js[link text](#d)
 
-        * OSX Installation Instructions
+        * OSX Installation Instructions[link text](#e)
 
-          * Homebrew Installation
+          * Homebrew Installation[link text](#f)
 
-          * Installing Node.js
+          * Installing Node.js[link text](#g)
 
-    2. Confirming Node.js installation
+    2. Confirming Node.js installation[link text](#h)
 
-    3. Installing Typescript
+    3. Installing Typescript[link text](#i)
 
-        1. Node TypeScript Package
+        1. Node TypeScript Package[link text](#j)
 
-        2. Atom TypeScript Package
+        2. Atom TypeScript Package[link text](#k)
 
-2. Viewing this Application
+2. Viewing this Application[link text](#l)
 
-    1. Clone down this application locally
+    1. Clone down this application locally[link text](#m)
 
-    2. Install the required dependencies
+    2. Install the required dependencies[link text](#n)
 
-    3. Take the application live
+    3. Take the application live[link text](#o)
 
-3. Editing this Application
+3. Editing this Application[link text](#p)
 
-# Getting Started
+# <a name="a"></a>Getting Started
 
-## Installing Atom
+## <a name="b"></a> Installing Atom
 
 ### Atom
 
@@ -47,13 +47,13 @@ Atom was designed with the developer in mind by adding features and customizatio
 
 * Download the installer for your operating system here: https://atom.io/
 
-## Windows / Linux Installation Instructions
+## <a name="c"></a> Windows / Linux Installation Instructions
 
 * Installing Node.js
 
 To install Node on other systems, go to the Node website, then download and install the appropriate installer for your operating system.
 
-## OSX Installation Instructions
+## <a name="d"></a> OSX Installation Instructions
 
 * Homebrew Installation
 
