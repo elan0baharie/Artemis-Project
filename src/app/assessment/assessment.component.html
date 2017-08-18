@@ -1,470 +1,567 @@
 <!-- image  -->
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <div *ngIf="showAssess" class="image"></div>
+<div *ngIf="quiz">
+  <div class="container" style="padding-bottom: 20px;"> <!-- For styling  -->
+    <h1 style="text-align:center;">Is remote work right for you?</h1> <!-- Heading  -->
+      <form class="" action="index.html" method="post">  <!-- Start of the form  -->
+          <ol> <!-- ol(ordered List) adds numbers to each of the questions  -->
+              <!-- Question # 1  -->
+              <hr>
 
-<div class="container" style="padding-bottom: 20px;"> <!-- For styling  -->
-  <h1 style="text-align:center;">Is remote work right for you?</h1> <!-- Heading  -->
-    <form class="" action="index.html" method="post">  <!-- Start of the form  -->
-        <ol> <!-- ol(ordered List) adds numbers to each of the questions  -->
-            <!-- Question # 1  -->
-            <hr>
+              <div *ngIf="showSlideOne" class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="form-group">
 
-            <div *ngIf="showSlideOne" class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="form-group">
+                   <label class="text">When given the choice, I prefer to be given a task list to run with.</label>
+                 </div>
+                </div>
 
-                 <label class="text">When given the choice, I prefer to be given a task list to run with.</label>
-               </div>
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <div class="line"></div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label>
+                    <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4" >
+                    Strongly Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
+                    Moderately Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="1">
+                    Moderately Disagree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="0">
+                    Strongly Disagree
+                  </label>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <a (click)="goSlideTwo()" class="btn btn-primary">Next</a>
+                </div>
+
               </div>
 
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <div class="line"></div>
-              </div>
+              <!-- Question # 2  -->
+              <div *ngIf="showSlideTwo" class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="form-group">
 
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <label>
-                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4" >
-                  Strongly Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
-                  Moderately Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="1">
-                  Moderately Disagree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="0">
-                  Strongly Disagree
-                </label>
-              </div>
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <a (click)="goSlideTwo()" class="btn btn-primary">Next</a>
-              </div>
+                   <label class="text"> I work best in a social environment.</label>
+                 </div>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <div class="line"></div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label>
+                    <input type="radio" name="remoteTwoValue" [(ngModel)]="remoteTwoValue" value="0">
+                    Strongly Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteTwoValue" [(ngModel)]="remoteTwoValue" value="1">
+                    Moderately Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteTwoValue" [(ngModel)]="remoteTwoValue" value="2">
+                    Moderately Disagree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteTwoValue" [(ngModel)]="remoteTwoValue" value="4">
+                    Strongly Disagree
+                  </label>
+                </div>
 
-            </div>
-
-            <!-- Question # 2  -->
-            <div *ngIf="showSlideTwo" class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="form-group">
-
-                 <label class="text"> I work best in a social environment.</label>
-               </div>
-              </div>
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <div class="line"></div>
-              </div>
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <label>
-                  <input type="radio" name="remoteTwoValue" [(ngModel)]="remoteTwoValue" value="0">
-                  Strongly Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteTwoValue" [(ngModel)]="remoteTwoValue" value="1">
-                  Moderately Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteTwoValue" [(ngModel)]="remoteTwoValue" value="2">
-                  Moderately Disagree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteTwoValue" [(ngModel)]="remoteTwoValue" value="4">
-                  Strongly Disagree
-                </label>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <a (click)="goSlideThree()" class="btn btn-primary">Next</a>
-                <div class="spacer" style="padding:10px;"></div>
-                <a (click)="goSlideOne()" class="btn btn-primary">Back</a>
-              </div>
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <a (click)="goSlideThree()" class="btn btn-primary">Next</a>
+                  <div class="spacer" style="padding:10px;"></div>
+                  <a (click)="goSlideOne()" class="btn btn-primary">Back</a>
+                </div>
 
 
 
-            </div>
-
-
-
-            <!-- Question # 3  -->
-
-            <div *ngIf="showSlideThree" class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="form-group">
-
-                 <label class="text">  My friends would say I’m technologically savvy.</label>
-               </div>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <div class="line"></div>
-              </div>
-
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <label>
-                  <input type="radio" name="remoteThreeValue" [(ngModel)]="remoteThreeValue" value="4">
-                  Strongly Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteThreeValue" [(ngModel)]="remoteThreeValue" value="2">
-                  Moderately Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteThreeValue" [(ngModel)]="remoteThreeValue" value="1">
-                  Moderately Disagree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteThreeValue" [(ngModel)]="remoteThreeValue" value="0">
-                  Strongly Disagree
-                </label>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <a (click)="goSlideFour()" class="btn btn-primary">Next</a>
-                <div class="spacer" style="padding:10px;"></div>
-                <a (click)="goSlideTwo()" class="btn btn-primary">Back</a>
-              </div>
-
-
-            </div>
-
-
-
-            <!-- Question # 4  -->
-
-            <div *ngIf="showSlideFour" class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="form-group">
-
-                 <label class="text">  When I start my day, I go straight to email and respond to as many as I can before working on anything else.</label>
-               </div>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <div class="line"></div>
-              </div>
-
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <label>
-                  <input type="radio" name="remoteFourValue" [(ngModel)]="remoteFourValue" value="4">
-                  Strongly Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteFourValue" [(ngModel)]="remoteFourValue" value="2">
-                  Moderately Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteFourValue" [(ngModel)]="remoteFourValue" value="1">
-                  Moderately Disagree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteFourValue" [(ngModel)]="remoteFourValue" value="0">
-                  Strongly Disagree
-                </label>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <a (click)="goSlideFive()" class="btn btn-primary">Next</a>
-                <div class="spacer" style="padding:10px;"></div>
-                <a (click)="goSlideThree()" class="btn btn-primary">Back</a>
-              </div>
-
-            </div>
-
-
-            <!-- Question # 5  -->
-
-            <div *ngIf="showSlideFive" class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="form-group">
-                 <label class="text">I’m good at multitasking on conference calls</label>
-               </div>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <div class="line"></div>
-              </div>
-
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <label>
-                  <input type="radio" name="remoteFiveValue" [(ngModel)]="remoteFiveValue" value="4">
-                  Strongly Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteFiveValue" [(ngModel)]="remoteFiveValue" value="2">
-                  Moderately Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteFiveValue" [(ngModel)]="remoteFiveValue" value="1">
-                  Moderately Disagree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="remoteFiveValue" [(ngModel)]="remoteFiveValue" value="0">
-                  Strongly Disagree
-                </label>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <a (click)="goSlideSix()" class="btn btn-primary">Next</a>
-                <div class="spacer" style="padding:10px;"></div>
-                <a (click)="goSlideFour()" class="btn btn-primary">Back</a>
-              </div>
-
-            </div>
-
-
-            <!-- Question # 1 for Strategy -->
-
-            <div *ngIf="showSlideSix" class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="form-group">
-                 <label class="text"> If the internet were to go down at work and I had an important assignment to finish, I’d stay on the phone with the internet provider as long as it took and let my boss know my work might be late.</label>
-               </div>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <div class="line"></div>
-              </div>
-
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <label>
-                  <input type="radio" name="strategyOneValue" [(ngModel)]="strategyOneValue" value="0">
-                  Strongly Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyOneValue" [(ngModel)]="strategyOneValue" value="1">
-                  Moderately Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyOneValue" [(ngModel)]="strategyOneValue" value="2">
-                  Moderately Disagree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyOneValue" [(ngModel)]="strategyOneValue" value="4">
-                  Strongly Disagree
-                </label>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <a (click)="goSlideSeven()" class="btn btn-primary">Next</a>
-                <div class="spacer" style="padding:10px;"></div>
-                <a (click)="goSlideFive()" class="btn btn-primary">Back</a>
               </div>
 
 
 
-            </div>
+              <!-- Question # 3  -->
+
+              <div *ngIf="showSlideThree" class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="form-group">
+
+                   <label class="text">  My friends would say I’m technologically savvy.</label>
+                 </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <div class="line"></div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label>
+                    <input type="radio" name="remoteThreeValue" [(ngModel)]="remoteThreeValue" value="4">
+                    Strongly Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteThreeValue" [(ngModel)]="remoteThreeValue" value="2">
+                    Moderately Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteThreeValue" [(ngModel)]="remoteThreeValue" value="1">
+                    Moderately Disagree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteThreeValue" [(ngModel)]="remoteThreeValue" value="0">
+                    Strongly Disagree
+                  </label>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <a (click)="goSlideFour()" class="btn btn-primary">Next</a>
+                  <div class="spacer" style="padding:10px;"></div>
+                  <a (click)="goSlideTwo()" class="btn btn-primary">Back</a>
+                </div>
 
 
-            <!-- Question # 2 for Strategy -->
-
-            <div *ngIf="showSlideSeven" class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="form-group">
-                 <label class="text"> I enjoy problem-solving.</label>
-               </div>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <div class="line"></div>
-              </div>
-
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <label>
-                  <input type="radio" name="strategyTwoValue" [(ngModel)]="strategyTwoValue" value="4">
-                  Strongly Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyTwoValue" [(ngModel)]="strategyTwoValue" value="2">
-                  Moderately Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyTwoValue" [(ngModel)]="strategyTwoValue" value="1">
-                  Moderately Disagree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyTwoValue" [(ngModel)]="strategyTwoValue" value="0">
-                  Strongly Disagree
-                </label>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <a (click)="goSlideEight()" class="btn btn-primary">Next</a>
-                <div class="spacer" style="padding:10px;"></div>
-                <a (click)="goSlideSix()" class="btn btn-primary">Back</a>
-              </div>
-
-            </div>
-
-            <!-- Question # 3 for Strategy -->
-            <div *ngIf="showSlideEight" class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-
-                <div class="form-group">
-                 <label class="text">Giving presentations isn’t my thing.</label>
-               </div>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <div class="line"></div>
-              </div>
-
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <label>
-                  <input type="radio" name="strategyThreeValue" [(ngModel)]="strategyThreeValue" value="0">
-                  Strongly Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyThreeValue" [(ngModel)]="strategyThreeValue" value="1">
-                  Moderately Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyThreeValue" [(ngModel)]="strategyThreeValue" value="2">
-                  Moderately Disagree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyThreeValue" [(ngModel)]="strategyThreeValue" value="4">
-                  Strongly Disagree
-                </label>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <a (click)="goSlideNine()" class="btn btn-primary">Next</a>
-                <div class="spacer" style="padding:10px;"></div>
-                <a (click)="goSlideSeven()" class="btn btn-primary">Back</a>
-              </div>
-
-
-            </div>
-
-            <!-- Question # 4 for Strategy -->
-
-            <div *ngIf="showSlideNine" class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="form-group">
-                 <label class="text">I like to be an expert in everything I do.</label>
-               </div>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <div class="line"></div>
-              </div>
-
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <label>
-                  <input type="radio" name="strategyFourValue" [(ngModel)]="strategyFourValue" value="4">
-                  Strongly Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyFourValue" [(ngModel)]="strategyFourValue" value="2">
-                  Moderately Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyFourValue" [(ngModel)]="strategyFourValue" value="1">
-                  Moderately Disagree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyFourValue" [(ngModel)]="strategyFourValue" value="0">
-                  Strongly Disagree
-                </label>
-              </div>
-
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <a (click)="goSlideTen()" class="btn btn-primary" class="btn btn-primary">Next</a>
-                <div class="spacer" style="padding:10px;"></div>
-                <a (click)="goSlideEight()" class="btn btn-primary">Back</a>
               </div>
 
 
 
-            </div>
+              <!-- Question # 4  -->
 
-            <!-- Question # 5 for Strategy -->
+              <div *ngIf="showSlideFour" class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="form-group">
 
-            <div *ngIf="showSlideTen" class="row">
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <div class="form-group">
-                 <label class="text">I'm willing to try a new approach or process even if it might not work.</label>
-               </div>
+                   <label class="text">  When I start my day, I go straight to email and respond to as many as I can before working on anything else.</label>
+                 </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <div class="line"></div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label>
+                    <input type="radio" name="remoteFourValue" [(ngModel)]="remoteFourValue" value="4">
+                    Strongly Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteFourValue" [(ngModel)]="remoteFourValue" value="2">
+                    Moderately Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteFourValue" [(ngModel)]="remoteFourValue" value="1">
+                    Moderately Disagree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteFourValue" [(ngModel)]="remoteFourValue" value="0">
+                    Strongly Disagree
+                  </label>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <a (click)="goSlideFive()" class="btn btn-primary">Next</a>
+                  <div class="spacer" style="padding:10px;"></div>
+                  <a (click)="goSlideThree()" class="btn btn-primary">Back</a>
+                </div>
+
               </div>
 
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <div class="line"></div>
+
+              <!-- Question # 5  -->
+
+              <div *ngIf="showSlideFive" class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="form-group">
+                   <label class="text">I’m good at multitasking on conference calls</label>
+                 </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <div class="line"></div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label>
+                    <input type="radio" name="remoteFiveValue" [(ngModel)]="remoteFiveValue" value="4">
+                    Strongly Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteFiveValue" [(ngModel)]="remoteFiveValue" value="2">
+                    Moderately Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteFiveValue" [(ngModel)]="remoteFiveValue" value="1">
+                    Moderately Disagree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="remoteFiveValue" [(ngModel)]="remoteFiveValue" value="0">
+                    Strongly Disagree
+                  </label>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <a (click)="goSlideSix()" class="btn btn-primary">Next</a>
+                  <div class="spacer" style="padding:10px;"></div>
+                  <a (click)="goSlideFour()" class="btn btn-primary">Back</a>
+                </div>
+
               </div>
 
-              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <label>
-                  <input type="radio" name="strategyFiveValue" [(ngModel)]="strategyFiveValue" value="4">
-                  Strongly Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyFiveValue" [(ngModel)]="strategyFiveValue" value="2">
-                  Moderately Agree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyFiveValue" [(ngModel)]="strategyFiveValue" value="1">
-                  Moderately Disagree
-                </label>
-                <br>
-                <label>
-                  <input type="radio" name="strategyFiveValue" [(ngModel)]="strategyFiveValue" value="0">
-                  Strongly Disagree
-                </label>
+
+              <!-- Question # 1 for Strategy -->
+
+              <div *ngIf="showSlideSix" class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="form-group">
+                   <label class="text"> If the internet were to go down at work and I had an important assignment to finish, I’d stay on the phone with the internet provider as long as it took and let my boss know my work might be late.</label>
+                 </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <div class="line"></div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label>
+                    <input type="radio" name="strategyOneValue" [(ngModel)]="strategyOneValue" value="0">
+                    Strongly Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyOneValue" [(ngModel)]="strategyOneValue" value="1">
+                    Moderately Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyOneValue" [(ngModel)]="strategyOneValue" value="2">
+                    Moderately Disagree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyOneValue" [(ngModel)]="strategyOneValue" value="4">
+                    Strongly Disagree
+                  </label>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <a (click)="goSlideSeven()" class="btn btn-primary">Next</a>
+                  <div class="spacer" style="padding:10px;"></div>
+                  <a (click)="goSlideFive()" class="btn btn-primary">Back</a>
+                </div>
+
+
+
               </div>
-              <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                <a (click)="goSlideNine()" class="btn btn-primary">Back</a>
-                <div class="spacer" style="padding:10px;"></div>
-                <button type="submit" class="btn btn-default" (click)="runAssess()" class="btn btn-primary">Submit</button>
+
+
+              <!-- Question # 2 for Strategy -->
+
+              <div *ngIf="showSlideSeven" class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="form-group">
+                   <label class="text"> I enjoy problem-solving.</label>
+                 </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <div class="line"></div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label>
+                    <input type="radio" name="strategyTwoValue" [(ngModel)]="strategyTwoValue" value="4">
+                    Strongly Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyTwoValue" [(ngModel)]="strategyTwoValue" value="2">
+                    Moderately Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyTwoValue" [(ngModel)]="strategyTwoValue" value="1">
+                    Moderately Disagree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyTwoValue" [(ngModel)]="strategyTwoValue" value="0">
+                    Strongly Disagree
+                  </label>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <a (click)="goSlideEight()" class="btn btn-primary">Next</a>
+                  <div class="spacer" style="padding:10px;"></div>
+                  <a (click)="goSlideSix()" class="btn btn-primary">Back</a>
+                </div>
+
               </div>
 
-            </div>
+              <!-- Question # 3 for Strategy -->
+              <div *ngIf="showSlideEight" class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
 
-            <!-- Add more questions as necessary  -->
-            <hr>
-        </ol>
-      </form>
-  </div>
+                  <div class="form-group">
+                   <label class="text">Giving presentations isn’t my thing.</label>
+                 </div>
+                </div>
 
-  <div class="response-box">
-    <div class="remote-success greenBox">
-      <h4>You show an aptitude for remote work.</h4>
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <div class="line"></div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label>
+                    <input type="radio" name="strategyThreeValue" [(ngModel)]="strategyThreeValue" value="0">
+                    Strongly Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyThreeValue" [(ngModel)]="strategyThreeValue" value="1">
+                    Moderately Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyThreeValue" [(ngModel)]="strategyThreeValue" value="2">
+                    Moderately Disagree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyThreeValue" [(ngModel)]="strategyThreeValue" value="4">
+                    Strongly Disagree
+                  </label>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <a (click)="goSlideNine()" class="btn btn-primary">Next</a>
+                  <div class="spacer" style="padding:10px;"></div>
+                  <a (click)="goSlideSeven()" class="btn btn-primary">Back</a>
+                </div>
+
+
+              </div>
+
+              <!-- Question # 4 for Strategy -->
+
+              <div *ngIf="showSlideNine" class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="form-group">
+                   <label class="text">I like to be an expert in everything I do.</label>
+                 </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <div class="line"></div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label>
+                    <input type="radio" name="strategyFourValue" [(ngModel)]="strategyFourValue" value="4">
+                    Strongly Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyFourValue" [(ngModel)]="strategyFourValue" value="2">
+                    Moderately Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyFourValue" [(ngModel)]="strategyFourValue" value="1">
+                    Moderately Disagree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyFourValue" [(ngModel)]="strategyFourValue" value="0">
+                    Strongly Disagree
+                  </label>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <a (click)="goSlideTen()" class="btn btn-primary" class="btn btn-primary">Next</a>
+                  <div class="spacer" style="padding:10px;"></div>
+                  <a (click)="goSlideEight()" class="btn btn-primary">Back</a>
+                </div>
+
+
+
+              </div>
+
+              <!-- Question # 5 for Strategy -->
+
+              <div *ngIf="showSlideTen" class="row">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="form-group">
+                   <label class="text">I'm willing to try a new approach or process even if it might not work.</label>
+                 </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <div class="line"></div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label>
+                    <input type="radio" name="strategyFiveValue" [(ngModel)]="strategyFiveValue" value="4">
+                    Strongly Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyFiveValue" [(ngModel)]="strategyFiveValue" value="2">
+                    Moderately Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyFiveValue" [(ngModel)]="strategyFiveValue" value="1">
+                    Moderately Disagree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategyFiveValue" [(ngModel)]="strategyFiveValue" value="0">
+                    Strongly Disagree
+                  </label>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <a (click)="goSlideNine()" class="btn btn-primary">Back</a>
+                  <div class="spacer" style="padding:10px;"></div>
+                  <button type="submit" class="btn btn-default" (click)="runAssess()" class="btn btn-primary">Submit</button>
+                </div>
+
+              </div>
+
+              <!-- Add more questions as necessary  -->
+              <hr>
+          </ol>
+        </form>
     </div>
-    <div class="remote-fail redBox">
-      <h4>You might work better in physical workplace.</h4>
     </div>
-    <div class="strategy-success greenBox">
-      <h4>Strategic consulting may be for you.</h4>
+
+    <div *ngIf="responsebox1" class="response-box1">
+      <div class="container">
+        <h2 class="well">Your Results</h2>
+        <div class="container">
+          <h4>Thank you for taking our quiz. This is not only to give us a sense of who you are, but also allow you to get a sense if strategy consulting and working in a remote environment is right for you.</h4>
+          <br>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+            <h4 class="panel-title">Remote Environment Potential Fit</h4>
+            </div>
+
+            <div class="row panel-body">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="w3-border">
+                  <div class="w3-grey" style="height:24px; width:100%; text-align:center; background-color:#758DA2!important">100%</div>
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                We think you're going to love working remotely! You seem to have all the right qualities it takes to be a successful remote worker as well as a collaborator with us.
+              </div>
+              <a href="http://www.artemisconnection.com/application" class="btn btn-primary" style="margin-left:10px">Apply</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="strategy-fail redBox">
-      <h4>Our consulting may not be the right fit for you.</h4>
+
+    <div *ngIf="responsebox2" class="response-box2">
+      <div class="container">
+        <h2 class="well">Your Results</h2>
+        <div class="container">
+          <h4>Thank you for taking our quiz. This is not only to give us a sense of who you are, but also allow you to get a sense if strategy consulting and working in a remote environment is right for you.</h4>
+          <br>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+            <h4 class="panel-title">Remote Environment Potential Fit</h4>
+            </div>
+
+            <div class="row panel-body">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="w3-border">
+                  <div class="w3-grey" style="height:24px; width:80%; text-align:center; background-color:#758DA2!important">80%</div>
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                We think you would be a strong remote worker but don't quite have the collaborator experience. Since you are so close to being a good fit, why not apply and we will see if we can work with you.
+              </div>
+              <a href="http://www.artemisconnection.com/application" class="btn btn-primary" style="margin-left:10px">Apply</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+
+      <div *ngIf="responsebox3" class="response-box3">
+        <div class="container">
+          <h2 class="well">Your Results</h2>
+          <div class="container">
+            <h4>Thank you for taking our quiz. This is not only to give us a sense of who you are, but also allow you to get a sense if strategy consulting and working in a remote environment is right for you.</h4>
+            <br>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+              <h4 class="panel-title">Remote Environment Potential Fit</h4>
+              </div>
+
+              <div class="row panel-body">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                  <div class="w3-border">
+                    <div class="w3-grey" style="height:24px; width:50%; text-align:center; background-color:#758DA2!important">50%</div>
+                  </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                While we love your desire and effort, we don't see this as quite the right fit at this time.
+                </div>
+                <a href="http://www.artemisconnection.com/" class="btn btn-primary" style="margin-left:10px">Home</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+        <div *ngIf="responsebox4" class="response-box4">
+          <div class="container">
+            <h2 class="well">Your Results</h2>
+            <div class="container">
+              <h4>Thank you for taking our quiz. This is not only to give us a sense of who you are, but also allow you to get a sense if strategy consulting and working in a remote environment is right for you.</h4>
+              <br>
+              <div class="panel panel-info">
+                <div class="panel-heading">
+                <h4 class="panel-title">Remote Environment Potential Fit</h4>
+                </div>
+
+                <div class="row panel-body">
+
+                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p style="text-align:center;">Thank you for considering us. At this time we will be persuing other candidates.</p>
+                  </div>
+                  <a href="http://www.artemisconnection.com/" class="btn btn-primary" style="margin-left:10px">Home</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>

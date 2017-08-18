@@ -9,6 +9,7 @@ import { HireQuestion } from '../hire-question.model';
 })
 
 export class AssessmentComponent implements OnInit {
+  public quiz: boolean;
   public showSlideOne: boolean;
   public showSlideTwo: boolean;
   public showSlideThree: boolean;
@@ -31,10 +32,17 @@ export class AssessmentComponent implements OnInit {
   public strategyThreeValue: string;
   public strategyFourValue: string;
   public strategyFiveValue: string;
+  public responsebox1: boolean;
+  public responsebox2: boolean;
+  public responsebox3: boolean;
+  public responsebox4: boolean;
+
+
 
   constructor() { }
 
   ngOnInit() {
+    this.quiz = true;
     this.showSlideOne = true;
     this.showSlideTwo = false;
     this.showSlideThree = false;
@@ -45,6 +53,10 @@ export class AssessmentComponent implements OnInit {
     this.showSlideEight = false;
     this.showSlideNine = false;
     this.showSlideTen = false;
+    this.responsebox1 = false;
+    this.responsebox2 = false;
+    this.responsebox3 = false;
+    this.responsebox4 = false;
   }
 
   runAssess(){
@@ -63,6 +75,25 @@ export class AssessmentComponent implements OnInit {
     this.strategyScore = realStratNumOne + realStratNumTwo + realStratNumThree + realStratNumFour + realStratNumFive;
     console.log("Your remote score is " + this.remoteScore + " out of 20.");
     console.log("Your strategy score is " + this.strategyScore + " out of 20.");
+
+    if(this.remoteScore >= 14){
+      this.quiz = false;
+      this.responsebox1 = true;
+      }
+    else if (this.remoteScore >= 10 && this.remoteScore < 14){
+        this.quiz = false;
+        this.responsebox2 = true;
+      }
+    else if (this.remoteScore < 10 ){
+        this.quiz = false;
+        this.responsebox3 = true;
+      }
+    else {
+        this.quiz = false;
+        this.responsebox4 = true;
+      }
+
+
     // if(this.remoteScore >= 10) {
     //   location.href = 'http://www.facebook.com';
     // } else if (this.remoteScore >= 6 && this.remoteScore < 10) {
