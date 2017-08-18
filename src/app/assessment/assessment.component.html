@@ -1,5 +1,5 @@
 <!-- image  -->
-  <div class="image"></div>
+  <div *ngIf="showAssess" class="image"></div>
 
 <div id="bootstrap-overrides" class="container"> <!-- For styling  -->
   <h1>Is remote work right for you?</h1> <!-- Heading  -->
@@ -130,7 +130,7 @@
                <div class="form-group">
                 <label>I like to be an expert in everything I do.</label>
                 <br>
-                <select [(ngModel)]="strategyFourValue" class="form-group" name="strategyFour">
+                <select [(ngModel)]="strategyFiveValue" class="form-group" name="strategyFive">
                   <option [value]=4>Agree Strongly</option>
                   <option [value]=2>Moderately Agree</option>
                   <option [value]=1>Moderately Disagree</option>
@@ -145,7 +145,7 @@
                <div class="form-group">
                 <label> I'm willing to try a new approach or process even if it might not work.</label>
                 <br>
-                <select [(ngModel)]="strategyFourValue" class="form-group" name="strategyFour">
+                <select [(ngModel)]="strategySixValue" class="form-group" name="strategySix">
                   <option [value]=4>Agree Strongly</option>
                   <option [value]=2>Moderately Agree</option>
                   <option [value]=1>Moderately Disagree</option>

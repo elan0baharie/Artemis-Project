@@ -8,6 +8,8 @@ import { HireQuestion } from '../hire-question.model';
   styleUrls: ['./assessment.component.css']
 })
 export class AssessmentComponent implements OnInit {
+  public showAssess: boolean;
+  public showResponse: boolean;
   public remoteScore: number;
   public strategyScore: number;
   public remoteOneValue: string;
@@ -18,9 +20,11 @@ export class AssessmentComponent implements OnInit {
   public strategyTwoValue: string;
   public strategyThreeValue: string;
   public strategyFourValue: string;
+  public strategyFiveValue: string;
+  public strategySixValue: string;
 
 
-  constructor(public showAssess: boolean, public showResponse: boolean) { }
+  constructor() { }
 
   ngOnInit() {
     this.showAssess = true;
