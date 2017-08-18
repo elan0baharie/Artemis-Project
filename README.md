@@ -1,10 +1,14 @@
 ![Picture](http://static1.squarespace.com/static/57b77304b3db2bfb203fbf3f/t/581e02ade4fcb51e9e0bc4cd/1501254745108/?format=1500w)
 
+# Hiring Assessment Application
+
+* A hiring assessment application to determine whether an applicant is suitable for working remotely and fulfilling a strategy consultant role.
+
 # Getting Started
 
-### Installing Atom
+## Installing Atom
 
-## Atom
+### Atom
 
 Atom was designed with the developer in mind by adding features and customization that help developers write their code more productively.
 
@@ -44,20 +48,27 @@ $ npm -v
 3.10.5
 (If you have an older version of Node already installed, upgrade through Homebrew by running $ brew upgrade node.)
 
-## Node.js
-
-# Confirmation
+# Node.js Confirmation
 
 Confirm that node and npm are in place by checking versions:
 
-Run the command $ node -v in your home directory. You should receive an output of 4.0.x or higher.
-Run the command $ npm -v in your home directory. You should receive an output of 3.6.x or higher.
+Run the command
 
-## TypeScript
+> $ node -v
+
+in your home directory. You should receive an output of 4.0.x or higher.
+
+Run the command
+
+> $ npm -v
+
+in your home directory. You should receive an output of 3.6.x or higher.
+
+# TypeScript
 
 To install TypeScript, Node.js and npm must be successfully installed first.
 
-# Installing TypeScript
+## Installing TypeScript
 We need to install two packages to begin working in TypeScript:
 
 * Node TypeScript Package
