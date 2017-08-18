@@ -1,158 +1,326 @@
 <!-- image  -->
   <div *ngIf="showAssess" class="image"></div>
 
-<div id="bootstrap-overrides" class="container"> <!-- For styling  -->
-  <h1>Is remote work right for you?</h1> <!-- Heading  -->
+<div class="container" style="padding-bottom: 20px;"> <!-- For styling  -->
+  <h1 style="text-align:center;">Is remote work right for you?</h1> <!-- Heading  -->
     <form class="" action="index.html" method="post">  <!-- Start of the form  -->
           <ol> <!-- ol(ordered List) adds numbers to each of the questions  -->
             <!-- Question # 1  -->
-            <li>
-               <div class="form-group">
-                <label class="text">When given the choice, I prefer to be given a task list to run with.</label>
-                <br>
-                <select [(ngModel)]="remoteOneValue" class="form-group" name="remoteOne">
-                  <option [value]=4>Agree Strongly</option>
-                  <option [value]=2>Moderately Agree</option>
-                  <option [value]=1>Moderately Disagree</option>
-                  <option [value]=0>Disagree Strongly</option>
-                </select>
+            <hr>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                 <label class="text">When given the choice, I prefer to be given a task list to run with.</label>
+               </div>
               </div>
-            </li>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4">
+                  Strongly Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
+                  Moderately Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="1">
+                  Moderately Disagree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="0">
+                  Strongly Disagree
+                </label>
+              </div>
+            </div>
 
             <!-- Question # 2  -->
-
-            <li>
-               <div class="form-group">
-                <label > I work best in a social environment.</label>
-                <br>
-                <select [(ngModel)]="remoteTwoValue" class="form-group" name="remoteTwo">
-                  <option [value]=4>Agree Strongly</option>
-                  <option [value]=2>Moderately Agree</option>
-                  <option [value]=1>Moderately Disagree</option>
-                  <option [value]=0>Disagree Strongly</option>
-                </select>
+            <hr>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                 <label class="text"> I work best in a social environment.</label>
+               </div>
               </div>
-            </li>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="0">
+                  Strongly Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="1">
+                  Moderately Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
+                  Moderately Disagree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4">
+                  Strongly Disagree
+                </label>
+              </div>
+            </div>
+
+
 
             <!-- Question # 3  -->
-
-            <li>
-               <div class="form-group">
-                <label>My friends would say I’m technologically savvy.</label>
-                <br>
-                <select [(ngModel)]="remoteThreeValue" class="form-group" name="remoteThree">
-                  <option [value]=4>Agree Strongly</option>
-                  <option [value]=2>Moderately Agree</option>
-                  <option [value]=1>Moderately Disagree</option>
-                  <option [value]=0>Disagree Strongly</option>
-                </select>
+            <hr>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                 <label class="text">  My friends would say I’m technologically savvy.</label>
+               </div>
               </div>
-            </li>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4">
+                  Strongly Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
+                  Moderately Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="1">
+                  Moderately Disagree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="0">
+                  Strongly Disagree
+                </label>
+              </div>
+            </div>
+
+
 
             <!-- Question # 4  -->
-
-            <li>
-               <div class="form-group">
-                <label >When I start my day, I go straight to email and respond to as many as I can before working on anything else.</label>
-                <br>
-                <select [(ngModel)]="remoteFourValue" class="form-group" name="remoteFour">
-                  <option [value]=4>Agree Strongly</option>
-                  <option [value]=2>Moderately Agree</option>
-                  <option [value]=1>Moderately Disagree</option>
-                  <option [value]=0>Disagree Strongly</option>
-                </select>
+            <hr>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                 <label class="text">  When I start my day, I go straight to email and respond to as many as I can before working on anything else.</label>
+               </div>
               </div>
-            </li>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="0">
+                  Strongly Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="1">
+                  Moderately Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
+                  Moderately Disagree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4">
+                  Strongly Disagree
+                </label>
+              </div>
+            </div>
+
 
             <!-- Question # 1 for Strategy -->
-
-            <li>
-               <div class="form-group">
-                <label > I’m good at multitasking on conference calls</label>
-                <br>
-                <select [(ngModel)]="strategyOneValue" class="form-group" name="strategyOne">
-                  <option [value]=4>Agree Strongly</option>
-                  <option [value]=2>Moderately Agree</option>
-                  <option [value]=1>Moderately Disagree</option>
-                  <option [value]=0>Disagree Strongly</option>
-                </select>
+            <hr>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                 <label class="text">I’m good at multitasking on conference calls</label>
+               </div>
               </div>
-            </li>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="0">
+                  Strongly Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="1">
+                  Moderately Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
+                  Moderately Disagree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4">
+                  Strongly Disagree
+                </label>
+              </div>
+            </div>
+
 
             <!-- Question # 2 for Strategy -->
-
-            <li>
-               <div class="form-group">
-                <label > If the internet were to go down at work and I had an important assignment to finish, I’d stay on the phone with the internet provider as long as it took and let my boss know my work might be late.</label>
-                <br>
-                <select [(ngModel)]="strategyTwoValue" class="form-group" name="strategyTwo">
-                  <option [value]=4>Agree Strongly</option>
-                  <option [value]=2>Moderately Agree</option>
-                  <option [value]=1>Moderately Disagree</option>
-                  <option [value]=0>Disagree Strongly</option>
-                </select>
+            <hr>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                 <label class="text"> If the internet were to go down at work and I had an important assignment to finish, I’d stay on the phone with the internet provider as long as it took and let my boss know my work might be late.</label>
+               </div>
               </div>
-            </li>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="0">
+                  Strongly Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="1">
+                  Moderately Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
+                  Moderately Disagree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4">
+                  Strongly Disagree
+                </label>
+              </div>
+            </div>
+
 
             <!-- Question # 3 for Strategy -->
-
-            <li>
-               <div class="form-group">
-                <label > I enjoy problem-solving.</label>
-                <br>
-                <select [(ngModel)]="strategyThreeValue" class="form-group" name="strategyThree">
-                  <option [value]=4>Agree Strongly</option>
-                  <option [value]=2>Moderately Agree</option>
-                  <option [value]=1>Moderately Disagree</option>
-                  <option [value]=0>Disagree Strongly</option>
-                </select>
+            <hr>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                 <label class="text"> I enjoy problem-solving.</label>
+               </div>
               </div>
-            </li>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4">
+                  Strongly Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
+                  Moderately Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="1">
+                  Moderately Disagree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="0">
+                  Strongly Disagree
+                </label>
+              </div>
+            </div>
 
             <!-- Question # 4 for Strategy -->
-
-            <li>
-               <div class="form-group">
-                <label>Giving presentations isn’t my thing.</label>
-                <br>
-                <select [(ngModel)]="strategyFourValue" class="form-group" name="strategyFour">
-                  <option [value]=4>Agree Strongly</option>
-                  <option [value]=2>Moderately Agree</option>
-                  <option [value]=1>Moderately Disagree</option>
-                  <option [value]=0>Disagree Strongly</option>
-                </select>
+            <hr>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                 <label class="text">Giving presentations isn’t my thing.</label>
+               </div>
               </div>
-            </li>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="0">
+                  Strongly Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="1">
+                  Moderately Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
+                  Moderately Disagree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4">
+                  Strongly Disagree
+                </label>
+              </div>
+            </div>
 
             <!-- Question # 5 for Strategy -->
-
-            <li>
-               <div class="form-group">
-                <label>I like to be an expert in everything I do.</label>
-                <br>
-                <select [(ngModel)]="strategyFiveValue" class="form-group" name="strategyFive">
-                  <option [value]=4>Agree Strongly</option>
-                  <option [value]=2>Moderately Agree</option>
-                  <option [value]=1>Moderately Disagree</option>
-                  <option [value]=0>Disagree Strongly</option>
-                </select>
+            <hr>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                 <label class="text">I like to be an expert in everything I do.</label>
+               </div>
               </div>
-            </li>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="0">
+                  Strongly Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="1">
+                  Moderately Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
+                  Moderately Disagree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4">
+                  Strongly Disagree
+                </label>
+              </div>
+            </div>
 
             <!-- Question # 6 for Strategy -->
-
-            <li>
-               <div class="form-group">
-                <label> I'm willing to try a new approach or process even if it might not work.</label>
-                <br>
-                <select [(ngModel)]="strategySixValue" class="form-group" name="strategySix">
-                  <option [value]=4>Agree Strongly</option>
-                  <option [value]=2>Moderately Agree</option>
-                  <option [value]=1>Moderately Disagree</option>
-                  <option [value]=0>Disagree Strongly</option>
-                </select>
+            <hr>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="form-group">
+                 <label class="text">I'm willing to try a new approach or process even if it might not work.</label>
+               </div>
               </div>
-            </li>
+              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4">
+                  Strongly Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
+                  Moderately Agree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="1">
+                  Moderately Disagree
+                </label>
+                <br>
+                <label>
+                  <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="0">
+                  Strongly Disagree
+                </label>
+              </div>
+            </div>
 
             <!-- Add more questions as necessary  -->
           </ol>
