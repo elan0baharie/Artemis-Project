@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { HireQuestion } from '../hire-question.model';
+
 
 @Component({
   selector: 'app-assessment',
@@ -59,36 +59,33 @@ export class AssessmentComponent implements OnInit {
     this.responsebox4 = false;
   }
 
-  runAssess(){
-    var realRemoteNumOne = parseInt(this.remoteOneValue);
-    var realRemoteNumTwo = parseInt(this.remoteTwoValue);
-    var realRemoteNumThree = parseInt(this.remoteThreeValue);
-    var realRemoteNumFour = parseInt(this.remoteFourValue);
-    var realRemoteNumFive = parseInt(this.remoteFiveValue);
-    var realStratNumOne = parseInt(this.strategyOneValue);
-    var realStratNumTwo = parseInt(this.strategyTwoValue);
-    var realStratNumThree = parseInt(this.strategyThreeValue);
-    var realStratNumFour = parseInt(this.strategyFourValue);
-    var realStratNumFive = parseInt(this.strategyFiveValue);
+  runAssess() {
+    const realRemoteNumOne = parseInt(this.remoteOneValue, 10);
+    const realRemoteNumTwo = parseInt(this.remoteTwoValue, 10);
+    const realRemoteNumThree = parseInt(this.remoteThreeValue, 10);
+    const realRemoteNumFour = parseInt(this.remoteFourValue, 10);
+    const realRemoteNumFive = parseInt(this.remoteFiveValue, 10);
+    const realStratNumOne = parseInt(this.strategyOneValue, 10);
+    const realStratNumTwo = parseInt(this.strategyTwoValue, 10);
+    const realStratNumThree = parseInt(this.strategyThreeValue, 10);
+    const realStratNumFour = parseInt(this.strategyFourValue, 10);
+    const realStratNumFive = parseInt(this.strategyFiveValue, 10);
 
     this.remoteScore = realRemoteNumOne + realRemoteNumTwo + realRemoteNumThree + realRemoteNumFour + realRemoteNumFive;
     this.strategyScore = realStratNumOne + realStratNumTwo + realStratNumThree + realStratNumFour + realStratNumFive;
-    console.log("Your remote score is " + this.remoteScore + " out of 20.");
-    console.log("Your strategy score is " + this.strategyScore + " out of 20.");
+    console.log('Your remote score is ' + this.remoteScore + ' out of 20.');
+    console.log('Your remote score is ' + this.strategyScore + ' out of 20.');
 
-    if(this.remoteScore >= 14){
+    if (this.remoteScore >= 14) {
       this.quiz = false;
       this.responsebox1 = true;
-      }
-    else if (this.remoteScore >= 10 && this.remoteScore < 14){
+      } else if (this.remoteScore >= 10 && this.remoteScore < 14) {
         this.quiz = false;
         this.responsebox2 = true;
-      }
-    else if (this.remoteScore < 10 ){
+      } else if (this.remoteScore < 10 ) {
         this.quiz = false;
         this.responsebox3 = true;
-      }
-    else {
+      } else {
         this.quiz = false;
         this.responsebox4 = true;
       }
