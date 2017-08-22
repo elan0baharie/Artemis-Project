@@ -112,3 +112,11 @@ option{
   font-size: 25px;
   font-family: 'helvetica';
 }
+
+.question{
+  font-family: 'Proxima-thin', sans-serif;
+  letter-spacing: px;
+  color: #2162ba;
+  font-size: 25px;
+  font-weight: 700;
+}

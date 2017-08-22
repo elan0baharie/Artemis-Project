@@ -3,8 +3,294 @@
 <div class="container">
   <p id="heading">Diversity & Inclusion Assessment</p>
   <p id="paragraph">
-    This tool is meant to enable organizations to benchmark their current diversity and inclusion activities and provide guidance in identifying areas to drive change. Companies that score high demonstrate they are performing at levels considered to be industry best practices while companies that score low demonstrate they have some work to do. 
+    This tool is meant to enable organizations to benchmark their current diversity and inclusion activities and provide guidance in identifying areas to drive change. Companies that score high demonstrate they are performing at levels considered to be industry best practices while companies that score low demonstrate they have some work to do.
   </p>
 
 
-</div>
+  <div *ngIf="quiz1">
+    <h3 id="heading">Commitment to Diversity</h3>
+    <hr>
+    <form action="index.html" method="post">
+      <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <div class="form-group">
+           <h3 class="question">The CEO is a sponsor a diversity and inclusion program.</h3>
+         </div>
+        </div>
+
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+          <div class="line"></div>
+        </div>
+
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <label>
+            <input type="radio" name="remoteOneValue"[(ngModel)]="remoteOneValue" value="1" >
+            We’ve taken no actions to address this.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="2">
+            We taken actions to address this, but have not initiated a discussion.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="3">
+            We’ve defined verbal and written standards to support this.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="4">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteOneValue" [(ngModel)]="remoteOneValue" value="5">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <div class="form-group">
+           <h3 class="question">We have an official definition and shared understanding of diversity and inclusion.</h3>
+         </div>
+        </div>
+
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+          <div class="line"></div>
+        </div>
+
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <label>
+            <input type="radio" name="remoteTwoValue"[(ngModel)]="remoteTwoValue" value="1" >
+            We’ve taken no actions to address this.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteTwoValue" [(ngModel)]="remoteTwoValue" value="2">
+            We taken actions to address this, but have not initiated a discussion.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteTwoValue" [(ngModel)]="remoteTwoValue" value="3">
+            We’ve defined verbal and written standards to support this.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteTwoValue" [(ngModel)]="remoteTwoValue" value="4">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteTwoValue" [(ngModel)]="remoteTwoValue" value="5">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <div class="form-group">
+           <h3 class="question">Diversity and inclusion is a core value and goal for our organization that are tied to business objectives and strategic goals.</h3>
+         </div>
+        </div>
+
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+          <div class="line"></div>
+        </div>
+
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <label>
+            <input type="radio" name="remoteThreeValue"[(ngModel)]="remoteThreeValue" value="1" >
+            We’ve taken no actions to address this.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteThreeValue" [(ngModel)]="remoteThreeValue" value="2">
+            We taken actions to address this, but have not initiated a discussion.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteThreeValue" [(ngModel)]="remoteThreeValue" value="3">
+            We’ve defined verbal and written standards to support this.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteThreeValue" [(ngModel)]="remoteThreeValue" value="4">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteThreeValue" [(ngModel)]="remoteThreeValue" value="5">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <div class="form-group">
+           <h3 class="question">Our managers / administrators can easily describe why diversity and inclusion are important for our organization.</h3>
+         </div>
+        </div>
+
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+          <div class="line"></div>
+        </div>
+
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <label>
+            <input type="radio" name="remoteFourValue"[(ngModel)]="remoteFourValue" value="1" >
+            We’ve taken no actions to address this
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteFourValue" [(ngModel)]="remoteFourValue" value="2">
+            We taken actions to address this, but have not initiated a discussion.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteFourValue" [(ngModel)]="remoteFourValue" value="3">
+            We’ve defined verbal and written standards to support this.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteFourValue" [(ngModel)]="remoteFourValue" value="4">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteFourValue" [(ngModel)]="remoteFourValue" value="5">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <div class="form-group">
+           <h3 class="question">We have conducted a pay equity analysis in the last year.</h3>
+         </div>
+        </div>
+
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+          <div class="line"></div>
+        </div>
+
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <label>
+            <input type="radio" name="remoteFiveValue"[(ngModel)]="remoteFiveValue" value="1" >
+            We’ve taken no actions to address this
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteFiveValue" [(ngModel)]="remoteFiveValue" value="2">
+            We taken actions to address this, but have not initiated a discussion.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteFiveValue" [(ngModel)]="remoteFiveValue" value="3">
+            We’ve defined verbal and written standards to support this.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteFiveValue" [(ngModel)]="remoteFiveValue" value="4">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteFiveValue" [(ngModel)]="remoteFiveValue" value="5">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <div class="form-group">
+           <h3 class="question">We have identified our organization's’ gender breakdown by role, level and department in the last year.</h3>
+         </div>
+        </div>
+
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+          <div class="line"></div>
+        </div>
+
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <label>
+            <input type="radio" name="remoteSixValue"[(ngModel)]="remoteSixValue" value="1" >
+            We’ve taken no actions to address this
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteSixValue" [(ngModel)]="remoteSixValue" value="2">
+            We taken actions to address this, but have not initiated a discussion.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteSixValue" [(ngModel)]="remoteSixValue" value="3">
+            We’ve defined verbal and written standards to support this.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteSixValue" [(ngModel)]="remoteSixValue" value="4">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteSixValue" [(ngModel)]="remoteSixValue" value="5">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <div class="form-group">
+           <h3 class="question">Diversity and inclusion competence considerations are integrated into our organization's strategic plan (including recruiting, hiring, retention, and promotion).</h3>
+         </div>
+        </div>
+
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+          <div class="line"></div>
+        </div>
+
+        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-xs-5">
+          <label>
+            <input type="radio" name="remoteSevenValue"[(ngModel)]="remoteSevenValue" value="1" >
+            We’ve taken no actions to address this
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteSevenValue" [(ngModel)]="remoteSevenValue" value="2">
+            We taken actions to address this, but have not initiated a discussion.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteSevenValue" [(ngModel)]="remoteSevenValue" value="3">
+            We’ve defined verbal and written standards to support this.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteSevenValue" [(ngModel)]="remoteSevenValue" value="4">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+          <br>
+          <label>
+            <input type="radio" name="remoteSevenValue" [(ngModel)]="remoteSevenValue" value="5">
+            We’ve defined standards and have integrated it into our workplace norms.
+          </label>
+        </div>
+      </div>
+      <hr>
+
+      <button type="submit" class="btn btn-default" (click)="runAssess()" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
