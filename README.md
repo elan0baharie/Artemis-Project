@@ -156,6 +156,14 @@ We’ll run the following command to install
 
 Restart Atom for changes to take place.
 
+* Installing Angular cli
+
+Angular CLI allows you to create entire projects from your command line.
+
+run
+
+> npm install -g @angular/cli@1.0.0
+
 - - - -
 
 # <a name="o"></a> Viewing the application
