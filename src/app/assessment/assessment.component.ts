@@ -176,7 +176,7 @@ export class AssessmentComponent implements OnInit {
       }
   }
 
-  goSlideOne() {
+  goQuizTwo() {
     this.showSlideOne = true;
     this.showSlideTwo = false;
   }
