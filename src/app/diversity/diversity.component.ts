@@ -121,14 +121,14 @@ export class DiversityComponent implements OnInit {
 
     this.employmentScore = realEmploymentNumOne + realEmploymentNumTwo + realEmploymentNumThree+ realEmploymentNumFour + realEmploymentNumFive + realEmploymentNumSix + realEmploymentNumSeven
     + realEmploymentNumSeven + realEmploymentNumEight + realEmploymentNumNine + realEmploymentNumTen + realEmploymentNumEleven;
-    console.log('Your employment score is ' + this.employmentScore + ' out of 60.');
+    console.log('Your employment score is ' + this.employmentScore + ' out of 55.');
 
     this.communicationScore = realCommunicationNumOne + realCommunicationNumTwo + realCommunicationNumThree;
     console.log('Your communication score is ' + this.communicationScore + ' out of 15.');
 
     this.cultureScore = realCultureNumOne + realCultureNumTwo + realCultureNumThree+ realCultureNumFour + realCultureNumFive + realCultureNumSix + realCultureNumSeven
     + realCultureNumSeven + realCultureNumEight + realCultureNumNine + realCultureNumTen + realCultureNumEleven + realCultureNumTwelve + realCultureNumThirteen;
-    console.log('Your culture score is ' + this.cultureScore + ' out of 60.');
+    console.log('Your culture score is ' + this.cultureScore + ' out of 65.');
 
 
   }
