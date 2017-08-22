@@ -11,7 +11,7 @@
           <ol> <!-- ol(ordered List) adds numbers to each of the questions  -->
               <!-- Question # 1  -->
               <hr>
-              <div [@myTestAnimation]='state' (click)='runAnimate()'>
+              <div >
                 <p>Testing this rright  Hennsasnldnsala</p>
               </div>
               <div *ngIf="showSlideOne" class="row slide-color">
@@ -47,13 +47,13 @@
                   </label>
                 </div>
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a (click)="goSlideTwo()" class="down-btn btn btn-primary" >Next</a>
+                  <a (click)='runAnimateTwo()' class="down-btn btn btn-primary" >Next</a>
                 </div>
 
               </div>
 
               <!-- Question # 2  -->
-              <div *ngIf="showSlideTwo" class="row slide-color">
+              <div [@myTestAnimation]='stateTwo' *ngIf="showSlideTwo" class="row slide-color">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                   <div class="form-group">
 
@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a (click)="goSlideThree()" class="btn btn-primary">Next</a>
+                  <a (click)="runAnimateThree()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
                   <a (click)="goSlideOne()" class="btn btn-primary">Back</a>
                 </div>
@@ -99,7 +99,7 @@
 
               <!-- Question # 3  -->
 
-              <div *ngIf="showSlideThree" class="row slide-color">
+              <div [@myTestAnimation]='stateThree' *ngIf="showSlideThree" class="row slide-color">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                   <div class="form-group">
 
@@ -134,7 +134,7 @@
                 </div>
 
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a (click)="goSlideFour()" class="btn btn-primary">Next</a>
+                  <a (click)="runAnimateFour()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
                   <a (click)="goSlideTwo()" class="btn btn-primary">Back</a>
                 </div>
@@ -146,7 +146,7 @@
 
               <!-- Question # 4  -->
 
-              <div *ngIf="showSlideFour" class="row slide-color">
+              <div [@myTestAnimation]='stateFour' *ngIf="showSlideFour" class="row slide-color">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                   <div class="form-group">
 
@@ -181,7 +181,7 @@
                 </div>
 
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a (click)="goSlideFive()" class="btn btn-primary">Next</a>
+                  <a (click)="runAnimateFive()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
                   <a (click)="goSlideThree()" class="btn btn-primary">Back</a>
                 </div>
@@ -191,7 +191,7 @@
 
               <!-- Question # 5  -->
 
-              <div *ngIf="showSlideFive" class="row slide-color">
+              <div [@myTestAnimation]='stateFive' *ngIf="showSlideFive" class="row slide-color">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                   <div class="form-group">
                    <h3 class="text">I’m good at multitasking on conference calls</h3>
@@ -225,7 +225,7 @@
                 </div>
 
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a (click)="goSlideSix()" class="btn btn-primary">Next</a>
+                  <a (click)="runAnimateSix()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
                   <a (click)="goSlideFour()" class="btn btn-primary">Back</a>
                 </div>
@@ -235,7 +235,7 @@
 
               <!-- Question # 1 for Strategy -->
 
-              <div *ngIf="showSlideSix" class="row slide-color">
+              <div [@myTestAnimation]='stateSix' *ngIf="showSlideSix" class="row slide-color">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                   <div class="form-group">
                    <h3 class="text"> If the internet were to go down at work and I had an important assignment to finish, I’d stay on the phone with the internet provider as long as it took and let my boss know my work might be late.</h3>
@@ -269,7 +269,7 @@
                 </div>
 
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a (click)="goSlideSeven()" class="btn btn-primary">Next</a>
+                  <a (click)="runAnimateSeven()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
                   <a (click)="goSlideFive()" class="btn btn-primary">Back</a>
                 </div>
@@ -281,7 +281,7 @@
 
               <!-- Question # 2 for Strategy -->
 
-              <div *ngIf="showSlideSeven" class="row slide-color">
+              <div [@myTestAnimation]='stateSeven' *ngIf="showSlideSeven" class="row slide-color">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                   <div class="form-group">
                    <h3 class="text"> I enjoy problem-solving.</h3>
@@ -315,7 +315,7 @@
                 </div>
 
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a (click)="goSlideEight()" class="btn btn-primary">Next</a>
+                  <a (click)="runAnimateEight()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
                   <a (click)="goSlideSix()" class="btn btn-primary">Back</a>
                 </div>
@@ -323,7 +323,7 @@
               </div>
 
               <!-- Question # 3 for Strategy -->
-              <div *ngIf="showSlideEight" class="row slide-color">
+              <div [@myTestAnimation]='stateEight' *ngIf="showSlideEight" class="row slide-color">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
 
                   <div class="form-group">
@@ -358,7 +358,7 @@
                 </div>
 
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a (click)="goSlideNine()" class="btn btn-primary">Next</a>
+                  <a (click)="runAnimateNine()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
                   <a (click)="goSlideSeven()" class="btn btn-primary">Back</a>
                 </div>
@@ -368,7 +368,7 @@
 
               <!-- Question # 4 for Strategy -->
 
-              <div *ngIf="showSlideNine" class="row slide-color">
+              <div [@myTestAnimation]='stateNine' *ngIf="showSlideNine" class="row slide-color">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                   <div class="form-group">
                    <h3 class="text">I like to be an expert in everything I do.</h3>
@@ -402,7 +402,7 @@
                 </div>
 
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <a (click)="goSlideTen()" class="btn btn-primary" class="btn btn-primary">Next</a>
+                  <a (click)="runAnimateTen()" class="btn btn-primary" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
                   <a (click)="goSlideEight()" class="btn btn-primary">Back</a>
                 </div>
@@ -413,7 +413,7 @@
 
               <!-- Question # 5 for Strategy -->
 
-              <div *ngIf="showSlideTen" class="row slide-color">
+              <div [@myTestAnimation]='stateTen' *ngIf="showSlideTen" class="row slide-color">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
                   <div class="form-group">
                    <h3 class="text">I'm willing to try a new approach or process even if it might not work.</h3>

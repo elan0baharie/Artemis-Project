@@ -9,19 +9,27 @@ import { trigger,state,style,transition,animate,keyframes } from '@angular/anima
   animations: [
     trigger( 'myTestAnimation',[
       state('beginShow', style({
-        opacity: 1
-      })),
-      state('endShow', style({
         opacity: 0
       })),
-      transition('beginShow => endShow', animate('400ms ease-in'))
+      state('endShow', style({
+        opacity: 1
+      })),
+      transition('beginShow => endShow', animate('800ms ease-in'))
       ]
     )
   ]
 })
 
 export class AssessmentComponent implements OnInit {
-  state: string = 'beginShow';
+  stateTwo: string = 'beginShow';
+  stateThree: string = 'beginShow';
+  stateFour: string = 'beginShow';
+  stateFive: string = 'beginShow';
+  stateSix: string = 'beginShow';
+  stateSeven: string = 'beginShow';
+  stateEight: string = 'beginShow';
+  stateNine: string = 'beginShow';
+  stateTen: string = 'beginShow';
   public test: boolean;
   public quiz: boolean;
   public showSlideOne: boolean;
@@ -58,23 +66,82 @@ export class AssessmentComponent implements OnInit {
   ngOnInit() {
     this.quiz = true;
     this.showSlideOne = true;
-    this.showSlideTwo = false;
-    this.showSlideThree = false;
-    this.showSlideFour = false;
-    this.showSlideFive = false;
-    this.showSlideSix = false;
-    this.showSlideSeven = false;
-    this.showSlideEight = false;
-    this.showSlideNine = false;
-    this.showSlideTen = false;
+    this.showSlideTwo = true;
+    this.showSlideThree = true;
+    this.showSlideFour = true;
+    this.showSlideFive = true;
+    this.showSlideSix = true;
+    this.showSlideSeven = true;
+    this.showSlideEight = true;
+    this.showSlideNine = true;
+    this.showSlideTen = true;
     this.responsebox1 = false;
     this.responsebox2 = false;
     this.responsebox3 = false;
     this.responsebox4 = false;
   }
 
-  runAnimate() {
-    this.state = (this.state === 'beginShow' ? 'endShow' : 'beginShow');
+  runAnimateTwo() {
+    console.log("Running Animate");
+    this.showSlideOne = false;
+    this.showSlideTwo = true;
+    this.stateTwo = (this.stateTwo === 'beginShow' ? 'endShow' : 'endShow');
+  }
+
+  runAnimateThree() {
+    console.log("Running Animate");
+    this.showSlideTwo = false;
+    this.showSlideThree = true;
+    this.stateThree = (this.stateThree === 'beginShow' ? 'endShow' : 'endShow');
+  }
+
+  runAnimateFour() {
+    console.log("Running Animate");
+    this.showSlideThree = false;
+    this.showSlideFour = true;
+    this.stateFour = (this.stateFour === 'beginShow' ? 'endShow' : 'endShow');
+  }
+
+  runAnimateFive() {
+    console.log("Running Animate");
+    this.showSlideFour = false;
+    this.showSlideFive = true;
+    this.stateFive = (this.stateFive === 'beginShow' ? 'endShow' : 'endShow');
+  }
+
+  runAnimateSix() {
+    console.log("Running Animate");
+    this.showSlideFive = false;
+    this.showSlideSix = true;
+    this.stateSix = (this.stateSix === 'beginShow' ? 'endShow' : 'endShow');
+  }
+
+  runAnimateSeven() {
+    console.log("Running Animate");
+    this.showSlideSix = false;
+    this.showSlideSeven = true;
+    this.stateSeven = (this.stateSeven === 'beginShow' ? 'endShow' : 'endShow');
+  }
+
+  runAnimateEight() {
+    console.log("Running Animate");
+    this.showSlideSeven = false;
+    this.showSlideEight = true;
+    this.stateEight = (this.stateEight === 'beginShow' ? 'endShow' : 'endShow');
+  }
+
+  runAnimateNine() {
+    console.log("Running Animate");
+    this.showSlideEight = false;
+    this.showSlideNine = true;
+    this.stateNine = (this.stateNine === 'beginShow' ? 'endShow' : 'endShow');
+  }
+
+  runAnimateTen() {
+    console.log("Running Animate");
+    this.showSlideNine = false;
+    this.showSlideTen = true;
+    this.stateTen = (this.stateTen === 'beginShow' ? 'endShow' : 'endShow');
   }
 
   runAssess() {
@@ -114,11 +181,6 @@ export class AssessmentComponent implements OnInit {
     this.showSlideTwo = false;
   }
 
-  goSlideTwo() {
-    this.showSlideOne = false;
-    this.showSlideTwo = true;
-    this.showSlideThree = false;
-  }
 
   goSlideThree() {
     this.showSlideTwo = false;
