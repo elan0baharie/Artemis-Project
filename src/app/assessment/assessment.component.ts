@@ -1,14 +1,28 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
+import { trigger,state,style,transition,animate,keyframes } from '@angular/animations';
 
 @Component({
   selector: 'app-assessment',
   templateUrl: './assessment.component.html',
-  styleUrls: ['./assessment.component.css']
+  styleUrls: ['./assessment.component.css'],
+  animations: [
+    trigger( 'myTestAnimation',[
+      state('beginShow', style({
+        opacity: 1
+      })),
+      state('endShow', style({
+        opacity: 0
+      })),
+      transition('beginShow => endShow', animate('400ms ease-in'))
+      ]
+    )
+  ]
 })
 
 export class AssessmentComponent implements OnInit {
+  state: string = 'beginShow';
+  public test: boolean;
   public quiz: boolean;
   public showSlideOne: boolean;
   public showSlideTwo: boolean;
@@ -59,6 +73,10 @@ export class AssessmentComponent implements OnInit {
     this.responsebox4 = false;
   }
 
+  runAnimate() {
+    this.state = (this.state === 'beginShow' ? 'endShow' : 'beginShow');
+  }
+
   runAssess() {
     const realRemoteNumOne = parseInt(this.remoteOneValue, 10);
     const realRemoteNumTwo = parseInt(this.remoteTwoValue, 10);
@@ -89,15 +107,6 @@ export class AssessmentComponent implements OnInit {
         this.quiz = false;
         this.responsebox4 = true;
       }
-
-
-    // if(this.remoteScore >= 10) {
-    //   location.href = 'http://www.facebook.com';
-    // } else if (this.remoteScore >= 6 && this.remoteScore < 10) {
-    //   location.href = 'http://www.twitter.com';
-    // } else {
-    //   location.href = 'http://www.Apple.com';
-    // }
   }
 
   goSlideOne() {

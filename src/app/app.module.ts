@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -20,7 +21,8 @@ import { DiversityComponent } from './diversity/diversity.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
