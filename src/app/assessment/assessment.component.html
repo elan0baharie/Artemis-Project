@@ -6,7 +6,7 @@
 
 <div *ngIf="quiz">
   <div class="container" style="padding-bottom: 20px;"> <!-- For styling  -->
-    <h1 style="text-align:center;">Is remote work right for you?</h1> <!-- Heading  -->
+    <h1 style="text-align:center;">Is Artemis right for you?</h1> <!-- Heading  -->
       <form class="" action="index.html" method="post">  <!-- Start of the form  -->
           <ol> <!-- ol(ordered List) adds numbers to each of the questions  -->
               <!-- Question # 1  -->
@@ -85,7 +85,7 @@
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
                   <a (click)="runAnimateThree()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
-                  <a (click)="goSlideOne()" class="btn btn-primary">Back</a>
+                  <a (click)="backSlideOne()" class="btn btn-primary">Back</a>
                 </div>
 
 
@@ -133,7 +133,7 @@
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
                   <a (click)="runAnimateFour()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
-                  <a (click)="goSlideTwo()" class="btn btn-primary">Back</a>
+                  <a (click)="backSlideTwo()" class="btn btn-primary">Back</a>
                 </div>
 
 
@@ -180,7 +180,7 @@
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
                   <a (click)="runAnimateFive()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
-                  <a (click)="goSlideThree()" class="btn btn-primary">Back</a>
+                  <a (click)="backSlideThree()" class="btn btn-primary">Back</a>
                 </div>
 
               </div>
@@ -224,7 +224,7 @@
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
                   <a (click)="runAnimateSix()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
-                  <a (click)="goSlideFour()" class="btn btn-primary">Back</a>
+                  <a (click)="backSlideFour()" class="btn btn-primary">Back</a>
                 </div>
 
               </div>
@@ -268,7 +268,7 @@
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
                   <a (click)="runAnimateSeven()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
-                  <a (click)="goSlideFive()" class="btn btn-primary">Back</a>
+                  <a (click)="backSlideFive()" class="btn btn-primary">Back</a>
                 </div>
 
 
@@ -314,7 +314,7 @@
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
                   <a (click)="runAnimateEight()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
-                  <a (click)="goSlideSix()" class="btn btn-primary">Back</a>
+                  <a (click)="backSlideSix()" class="btn btn-primary">Back</a>
                 </div>
 
               </div>
@@ -357,7 +357,7 @@
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
                   <a (click)="runAnimateNine()" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
-                  <a (click)="goSlideSeven()" class="btn btn-primary">Back</a>
+                  <a (click)="backSlideSeven()" class="btn btn-primary">Back</a>
                 </div>
 
 
@@ -401,7 +401,7 @@
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
                   <a (click)="runAnimateTen()" class="btn btn-primary" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
-                  <a (click)="goSlideEight()" class="btn btn-primary">Back</a>
+                  <a (click)="backSlideEight()" class="btn btn-primary">Back</a>
                 </div>
 
 
@@ -443,19 +443,60 @@
                   </label>
                 </div>
                 <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
-                  <button type="submit" class="btn btn-default" (click)="runAssess()" class="btn btn-primary">Submit</button>
+                  <a (click)="runAnimateEleven()" class="btn btn-primary" class="btn btn-primary">Next</a>
                   <div class="spacer" style="padding:10px;"></div>
-                  <a (click)="goSlideNine()" class="btn btn-primary">Back</a>
+                  <a (click)="backSlideNine()" class="btn btn-primary">Back</a>
                 </div>
 
               </div>
 
-              <!-- Add more questions as necessary  -->
+              <!-- Question # 6 for Strategy/ Community  -->
+
+              <div [@myTestAnimation]='stateEleven' *ngIf="showSlideEleven" class="row slide-color">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <div class="form-group">
+                   <h3 class="text">I already or would like to provide ways to give back to my community.</h3>
+                 </div>
+                </div>
+
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <div class="line"></div>
+                </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                  <label>
+                    <input type="radio" name="strategySixValue" [(ngModel)]="strategySixValue" value="4">
+                    Strongly Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategySixValue" [(ngModel)]="strategySixValue" value="2">
+                    Moderately Agree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategySixValue" [(ngModel)]="strategySixValue" value="1">
+                    Moderately Disagree
+                  </label>
+                  <br>
+                  <label>
+                    <input type="radio" name="strategySixValue" [(ngModel)]="strategySixValue" value="0">
+                    Strongly Disagree
+                  </label>
+                </div>
+                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                  <button type="submit" class="btn btn-default" (click)="runAssess()" class="btn btn-primary">Submit</button>
+                  <div class="spacer" style="padding:10px;"></div>
+                  <a (click)="backSlideTen()" class="btn btn-primary">Back</a>
+                </div>
+
+              </div>
               <hr>
           </ol>
         </form>
     </div>
-    </div>
+  <!-- End of "quiz" div -->
+  </div>
 
     <div *ngIf="responsebox1" class="response-box1">
       <div class="container">
