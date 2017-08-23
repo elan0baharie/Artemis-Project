@@ -8,11 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  user : any;
+  user: any;
   newUser = {
     username: '',
     password: ''
-  }
+  };
 
   constructor() {}
 

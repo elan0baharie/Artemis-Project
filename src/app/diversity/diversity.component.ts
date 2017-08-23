@@ -71,57 +71,61 @@ export class DiversityComponent implements OnInit {
   }
 
   runAssess() {
-    const realDiversityNumOne = parseInt(this.diversityOneValue, 10);
-    const realDiversityNumTwo = parseInt(this.diversityTwoValue, 10);
-    const realDiversityNumThree = parseInt(this.diversityThreeValue, 10);
-    const realDiversityNumFour = parseInt(this.diversityFourValue, 10);
-    const realDiversityNumFive = parseInt(this.diversityFiveValue, 10);
-    const realDiversityNumSix = parseInt(this.diversitySixValue, 10);
-    const realDiversityNumSeven = parseInt(this.diversitySevenValue, 10);
+    const numDivOne = parseInt(this.diversityOneValue, 10);
+    const numDivTwo = parseInt(this.diversityTwoValue, 10);
+    const numDivThree = parseInt(this.diversityThreeValue, 10);
+    const numDivFour = parseInt(this.diversityFourValue, 10);
+    const numDivFive = parseInt(this.diversityFiveValue, 10);
+    const numDivSix = parseInt(this.diversitySixValue, 10);
+    const numDivSeven = parseInt(this.diversitySevenValue, 10);
 
-    const realEmploymentNumOne = parseInt(this.employmentOneValue, 10);
-    const realEmploymentNumTwo = parseInt(this.employmentTwoValue, 10);
-    const realEmploymentNumThree = parseInt(this.employmentThreeValue, 10);
-    const realEmploymentNumFour = parseInt(this.employmentFourValue, 10);
-    const realEmploymentNumFive = parseInt(this.employmentFiveValue, 10);
-    const realEmploymentNumSix = parseInt(this.employmentSixValue, 10);
-    const realEmploymentNumSeven = parseInt(this.employmentSevenValue, 10);
-    const realEmploymentNumEight = parseInt(this.employmentEightValue, 10);
-    const realEmploymentNumNine = parseInt(this.employmentNineValue, 10);
-    const realEmploymentNumTen = parseInt(this.employmentTenValue, 10);
-    const realEmploymentNumEleven = parseInt(this.employmentElevenValue, 10);
-    const realEmploymentNumTwelve = parseInt(this.employmentTwelveValue, 10);
+    const numEmpOne = parseInt(this.employmentOneValue, 10);
+    const numEmpTwo = parseInt(this.employmentTwoValue, 10);
+    const numEmpThree = parseInt(this.employmentThreeValue, 10);
+    const numEmpFour = parseInt(this.employmentFourValue, 10);
+    const numEmpFive = parseInt(this.employmentFiveValue, 10);
+    const numEmpSix = parseInt(this.employmentSixValue, 10);
+    const numEmpSeven = parseInt(this.employmentSevenValue, 10);
+    const numEmpEight = parseInt(this.employmentEightValue, 10);
+    const numEmpNine = parseInt(this.employmentNineValue, 10);
+    const numEmpTen = parseInt(this.employmentTenValue, 10);
+    const numEmpEleven = parseInt(this.employmentElevenValue, 10);
 
-    const realCommunicationNumOne = parseInt(this.communicationOneValue, 10);
-    const realCommunicationNumTwo = parseInt(this.communicationTwoValue, 10);
-    const realCommunicationNumThree = parseInt(this.communicationThreeValue, 10);
+    const numCommOne = parseInt(this.communicationOneValue, 10);
+    const numCommTwo = parseInt(this.communicationTwoValue, 10);
+    const numCommThree = parseInt(this.communicationThreeValue, 10);
 
-    const realCultureNumOne = parseInt(this.cultureOneValue, 10);
-    const realCultureNumTwo = parseInt(this.cultureTwoValue, 10);
-    const realCultureNumThree = parseInt(this.cultureThreeValue, 10);
-    const realCultureNumFour = parseInt(this.cultureFourValue, 10);
-    const realCultureNumFive = parseInt(this.cultureFiveValue, 10);
-    const realCultureNumSix = parseInt(this.cultureSixValue, 10);
-    const realCultureNumSeven = parseInt(this.cultureSevenValue, 10);
-    const realCultureNumEight = parseInt(this.cultureEightValue, 10);
-    const realCultureNumNine = parseInt(this.cultureNineValue, 10);
-    const realCultureNumTen = parseInt(this.cultureTenValue, 10);
-    const realCultureNumEleven = parseInt(this.cultureElevenValue, 10);
-    const realCultureNumTwelve = parseInt(this.cultureTwelveValue, 10);
-    const realCultureNumThirteen = parseInt(this.cultureThirteenValue, 10);
+    const numCulOne = parseInt(this.cultureOneValue, 10);
+    const numCulTwo = parseInt(this.cultureTwoValue, 10);
+    const numCulThree = parseInt(this.cultureThreeValue, 10);
+    const numCulFour = parseInt(this.cultureFourValue, 10);
+    const numCulFive = parseInt(this.cultureFiveValue, 10);
+    const numCulSix = parseInt(this.cultureSixValue, 10);
+    const numCulSeven = parseInt(this.cultureSevenValue, 10);
+    const numCulEight = parseInt(this.cultureEightValue, 10);
+    const numCulNine = parseInt(this.cultureNineValue, 10);
+    const numCulTen = parseInt(this.cultureTenValue, 10);
+    const numCulEleven = parseInt(this.cultureElevenValue, 10);
+    const numCulTwelve = parseInt(this.cultureTwelveValue, 10);
+    const numCulThirteen = parseInt(this.cultureThirteenValue, 10);
 
-
-    this.diversityScore = realDiversityNumOne + realDiversityNumTwo + realDiversityNumThree+ realDiversityNumFour+ realDiversityNumFive+ realDiversityNumSix+ realDiversityNumSeven;
+    this.diversityScore = numDivOne + numDivTwo + numDivThree + numDivFour + numDivFive + numDivSix + numDivSeven;
     console.log('Your diversity score is ' + this.diversityScore + ' out of 35.');
 
-    this.employmentScore = realEmploymentNumOne + realEmploymentNumTwo + realEmploymentNumThree+ realEmploymentNumFour + realEmploymentNumFive + realEmploymentNumSix + realEmploymentNumSeven + realEmploymentNumEight + realEmploymentNumNine + realEmploymentNumTen + realEmploymentNumEleven;
+    this.employmentScore =
+      numEmpOne + numEmpTwo + numEmpThree + numEmpFour + numEmpFive + numEmpSix +
+      numEmpSeven + numEmpEight + numEmpNine + numEmpTen + numEmpEleven;
     console.log('Your employment score is ' + this.employmentScore + ' out of 55.');
 
-    this.communicationScore = realCommunicationNumOne + realCommunicationNumTwo + realCommunicationNumThree;
+    this.communicationScore = numCommOne + numCommTwo + numCommThree;
     console.log('Your communication score is ' + this.communicationScore + ' out of 15.');
 
-    this.cultureScore = realCultureNumOne + realCultureNumTwo + realCultureNumThree+ realCultureNumFour + realCultureNumFive + realCultureNumSix + realCultureNumSeven + realCultureNumEight + realCultureNumNine + realCultureNumTen + realCultureNumEleven + realCultureNumTwelve + realCultureNumThirteen;
-    console.log('Your culture score is ' + this.cultureScore + ' out of 65.');
+    this.cultureScore =
+      numCulOne + numCulTwo + numCulThree + numCulFour + numCulFive + numCulSix +
+      numCulSeven + numCulEight + numCulNine + numCulTen + numCulEleven +
+      numCulTwelve + numCulThirteen;
+    console.log('Your culture score is ' + this.cultureScore + ' out of 70.');
+
 
   }
 
