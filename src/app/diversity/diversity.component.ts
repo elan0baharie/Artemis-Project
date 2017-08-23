@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-diversity',
   templateUrl: './diversity.component.html',
@@ -54,7 +55,7 @@ export class DiversityComponent implements OnInit {
   public cultureTwelveValue: string;
   public cultureThirteenValue: string;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.quiz1 = true;
@@ -62,6 +63,10 @@ export class DiversityComponent implements OnInit {
     this.quiz3 = false;
     this.quiz4 = false;
 
+  }
+
+  scrollWin() {
+    window.scrollTo(0, 0);
   }
 
   runAssess() {
@@ -140,7 +145,6 @@ export class DiversityComponent implements OnInit {
     this.quiz2 = false;
     this.quiz3 = false;
     this.quiz4 = true;
-
   }
 
 }

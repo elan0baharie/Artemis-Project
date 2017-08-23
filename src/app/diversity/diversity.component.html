@@ -285,14 +285,15 @@
         </div>
       </div>
       <hr>
-      <a (click)="goQuizTwo()" class="btn btn-primary">Next Section</a>
+
+      <a (click)="goQuizTwo()" (click)="scrollWin()" class="btn btn-primary">Next Section</a>
       </div>
 
 
 <!--quiz 2 about employment  -->
 
 
-      <div *ngIf="quiz2">
+      <div *ngIf="quiz2" >
         <h3 id="heading">Employment Practices</h3>
           <hr>
         <div class="row">
@@ -778,7 +779,7 @@
         </div>
         <hr>
 
-        <a (click)="goQuizThree()" class="btn btn-primary">Next Section</a>
+        <a (click)="goQuizThree()" (click)="scrollWin()" class="btn btn-primary">Next Section</a>
         </div>
 
 
@@ -905,7 +906,7 @@
         </div>
       </div>
       <hr>
-      <a (click)="goQuizFour()" class="btn btn-primary">Next Section</a>
+      <a (click)="goQuizFour()" (click)="scrollWin()" class="btn btn-primary">Next Section</a>
     </div>
 
 
@@ -1434,6 +1435,5 @@
         </div>
           <hr>
 
-
-          <button type="submit" class="btn btn-default" (click)="runAssess()" class="btn btn-primary">Submit</button>  </div>
+        <button type="submit" class="btn btn-default" (click)="runAssess()" class="btn btn-primary">Submit</button>  </div>
 </form>
