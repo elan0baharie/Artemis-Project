@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-diversity',
   templateUrl: './diversity.component.html',
@@ -56,7 +57,7 @@ export class DiversityComponent implements OnInit {
   public cultureThirteenValue: string;
 
   constructor() {}
-  
+
   ngOnInit() {
     this.quiz1 = true;
     this.quiz2 = false;
