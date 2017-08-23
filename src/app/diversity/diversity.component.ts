@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-diversity',
   templateUrl: './diversity.component.html',
@@ -54,20 +55,18 @@ export class DiversityComponent implements OnInit {
   public cultureTwelveValue: string;
   public cultureThirteenValue: string;
 
-
-
-
-
-
-
-  constructor() { }
-
+  constructor() {}
+  
   ngOnInit() {
     this.quiz1 = true;
     this.quiz2 = false;
     this.quiz3 = false;
     this.quiz4 = false;
 
+  }
+
+  scrollWin() {
+    window.scrollTo(0, 0);
   }
 
   runAssess() {
@@ -111,11 +110,6 @@ export class DiversityComponent implements OnInit {
     const realCultureNumThirteen = parseInt(this.cultureThirteenValue, 10);
 
 
-
-
-
-
-
     this.diversityScore = realDiversityNumOne + realDiversityNumTwo + realDiversityNumThree+ realDiversityNumFour+ realDiversityNumFive+ realDiversityNumSix+ realDiversityNumSeven;
     console.log('Your diversity score is ' + this.diversityScore + ' out of 35.');
 
@@ -126,8 +120,7 @@ export class DiversityComponent implements OnInit {
     console.log('Your communication score is ' + this.communicationScore + ' out of 15.');
 
     this.cultureScore = realCultureNumOne + realCultureNumTwo + realCultureNumThree+ realCultureNumFour + realCultureNumFive + realCultureNumSix + realCultureNumSeven + realCultureNumEight + realCultureNumNine + realCultureNumTen + realCultureNumEleven + realCultureNumTwelve + realCultureNumThirteen;
-    console.log('Your culture score is ' + this.cultureScore + ' out of 70.');
-
+    console.log('Your culture score is ' + this.cultureScore + ' out of 65.');
 
   }
 
@@ -148,7 +141,6 @@ export class DiversityComponent implements OnInit {
     this.quiz2 = false;
     this.quiz3 = false;
     this.quiz4 = true;
-
   }
 
 }
