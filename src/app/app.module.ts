@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AssessmentComponent } from './assessment/assessment.component';
 import { DiversityComponent } from './diversity/diversity.component';
-import { SmoothScrollToDirective, SmoothScrollDirective } from "ng2SmoothScroll";
+import * as $ from 'jquery';
 
 
 @NgModule({
@@ -18,8 +18,7 @@ import { SmoothScrollToDirective, SmoothScrollDirective } from "ng2SmoothScroll"
     HomeComponent,
     AssessmentComponent,
     DiversityComponent,
-    SmoothScrollToDirective,
-    SmoothScrollDirective
+
   ],
   imports: [
     BrowserModule,

@@ -67,8 +67,10 @@ export class DiversityComponent implements OnInit {
   }
 
   scrollWin() {
-    window.scrollTo(0, 0);
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
   }
+
 
   runAssess() {
     const numDivOne = parseInt(this.diversityOneValue, 10);
