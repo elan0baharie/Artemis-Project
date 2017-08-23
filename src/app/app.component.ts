@@ -1,19 +1,20 @@
 import { Component } from '@angular/core';
-import {UsersService} from './users.service';
+
 
 @Component({
-  moduleId: module.id
+  moduleId: module.id,
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  user : any;
   newUser = {
     username: '',
     password: ''
   }
 
-  constructor(private user: UserService) {}
+  constructor() {}
 
   addUser() {
     this.user.addNew(this.newUser);
