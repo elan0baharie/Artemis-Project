@@ -136,9 +136,9 @@ export class AssessmentComponent implements OnInit {
   }
 
   runAnimateTwo() {
-    this.showSlideOne = false;
+
     this.showSlideTwo = true;
-    this.stateTwo = (this.stateTwo === 'beginShow' ? 'endShow' : 'endShow');
+    this.stateTwo = (this.stateTwo === 'beginShow' ? 'endShow' : 'endShow'), this.showSlideOne = false;
   }
 
   runAnimateThree() {
@@ -218,18 +218,18 @@ export class AssessmentComponent implements OnInit {
     console.log('Your remote score is ' + this.remoteScore + ' out of 20.');
     console.log('Your remote score is ' + this.strategyScore + ' out of 24.');
 
-    if (this.remoteScore >= 14) {
+    if (this.remoteScore >= 14 && this.strategyScore >= 16) {
       this.quiz = false;
       this.responsebox1 = true;
-      } else if (this.remoteScore >= 10 && this.remoteScore < 14) {
+    } else if ((this.remoteScore >= 10 && this.remoteScore < 14) && (this.strategyScore < 16 && this.strategyScore >= 12)) {
         this.quiz = false;
         this.responsebox2 = true;
-      } else if (this.remoteScore < 10 ) {
+    } else if (this.remoteScore < 10 || this.strategyScore < 12) {
         this.quiz = false;
         this.responsebox3 = true;
-      } else {
+    } else {
         this.quiz = false;
         this.responsebox4 = true;
-      }
+    }
   }
 }
