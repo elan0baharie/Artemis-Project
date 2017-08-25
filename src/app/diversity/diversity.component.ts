@@ -14,6 +14,9 @@ export class DiversityComponent implements OnInit {
   public quiz4: boolean;
 
   public diversityScore: number;
+  public diversityAvg: number;
+  public test: number;
+
   public diversityOneValue: string;
   public diversityTwoValue: string;
   public diversityThreeValue: string;
@@ -27,6 +30,8 @@ export class DiversityComponent implements OnInit {
 
 
   public employmentScore: number;
+  public employmentAvg: number;
+
   public employmentOneValue: string;
   public employmentTwoValue: string;
   public employmentThreeValue: string;
@@ -44,6 +49,8 @@ export class DiversityComponent implements OnInit {
 
 
   public communicationScore: number;
+  public commAvg: number;
+
   public communicationOneValue: string;
   public communicationTwoValue: string;
   public communicationThreeValue: string;
@@ -52,6 +59,8 @@ export class DiversityComponent implements OnInit {
 
 
   public cultureScore: number;
+  public cultureAvg: number;
+
   public cultureOneValue: string;
   public cultureTwoValue: string;
   public cultureThreeValue: string;
@@ -67,6 +76,8 @@ export class DiversityComponent implements OnInit {
   public cultureThirteenValue: string;
   public cultureFourteenValue: string;
   public cultureFifteenValue: string;
+
+  public showAssessment: boolean;
 
   constructor() {}
 
@@ -96,7 +107,6 @@ export class DiversityComponent implements OnInit {
     const numDivNine = parseInt(this.diversityNineValue, 10);
     const numDivTen = parseInt(this.diversityTenValue, 10);
 
-
     const numEmpOne = parseInt(this.employmentOneValue, 10);
     const numEmpTwo = parseInt(this.employmentTwoValue, 10);
     const numEmpThree = parseInt(this.employmentThreeValue, 10);
@@ -111,7 +121,6 @@ export class DiversityComponent implements OnInit {
     const numEmpTwelve = parseInt(this.employmentTwelveValue, 10);
     const numEmpThirteen = parseInt(this.employmentThirteenValue, 10);
     const numEmpFourteen = parseInt(this.employmentFourteenValue, 10);
-
 
     const numCommOne = parseInt(this.communicationOneValue, 10);
     const numCommTwo = parseInt(this.communicationTwoValue, 10);
@@ -135,22 +144,33 @@ export class DiversityComponent implements OnInit {
     const numCulFourteen = parseInt(this.cultureFourteenValue, 10);
     const numCulFifteen = parseInt(this.cultureFifteenValue, 10);
 
-    this.diversityScore = numDivOne + numDivTwo + numDivThree + numDivFour + numDivFive + numDivSix + numDivSeven+ numDivEight + numDivNine + numDivTen;
+    this.diversityScore  = numDivOne + numDivTwo + numDivThree + numDivFour + numDivFive + numDivSix + numDivSeven+ numDivEight + numDivNine + numDivTen;
     console.log('Your diversity score is ' + this.diversityScore + ' out of 50.');
+
+    this.diversityAvg = this.diversityScore / 10;
 
     this.employmentScore =
       numEmpOne + numEmpTwo + numEmpThree + numEmpFour + numEmpFive + numEmpSix +
       numEmpSeven + numEmpEight + numEmpNine + numEmpTen + numEmpEleven + numEmpTwelve + numEmpThirteen + numEmpFourteen;
     console.log('Your employment score is ' + this.employmentScore + ' out of 70.');
 
+    this.employmentAvg = this.employmentScore / 14;
+
     this.communicationScore = numCommOne + numCommTwo + numCommThree + numCommFour + numCommFive;
     console.log('Your communication score is ' + this.communicationScore + ' out of 25.');
+
+    this.commAvg = this.communicationScore / 5;
 
     this.cultureScore =
       numCulOne + numCulTwo + numCulThree + numCulFour + numCulFive + numCulSix +
       numCulSeven + numCulEight + numCulNine + numCulTen + numCulEleven +
       numCulTwelve + numCulThirteen + numCulFourteen + numCulFifteen;
     console.log('Your culture score is ' + this.cultureScore + ' out of 75.');
+
+    this.cultureAvg = this.cultureScore / 15;
+
+    this.quiz4 = false;
+    this.showAssessment = true;
   }
 
   goQuizTwo() {
