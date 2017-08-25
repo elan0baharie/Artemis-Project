@@ -21,6 +21,10 @@ export class DiversityComponent implements OnInit {
   public diversityFiveValue: string;
   public diversitySixValue: string;
   public diversitySevenValue: string;
+  public diversityEightValue: string;
+  public diversityNineValue: string;
+  public diversityTenValue: string;
+
 
   public employmentScore: number;
   public employmentOneValue: string;
@@ -35,11 +39,17 @@ export class DiversityComponent implements OnInit {
   public employmentTenValue: string;
   public employmentElevenValue: string;
   public employmentTwelveValue: string;
+  public employmentThirteenValue: string;
+  public employmentFourteenValue: string;
+
 
   public communicationScore: number;
   public communicationOneValue: string;
   public communicationTwoValue: string;
   public communicationThreeValue: string;
+  public communicationFourValue: string;
+  public communicationFiveValue: string;
+
 
   public cultureScore: number;
   public cultureOneValue: string;
@@ -55,6 +65,8 @@ export class DiversityComponent implements OnInit {
   public cultureElevenValue: string;
   public cultureTwelveValue: string;
   public cultureThirteenValue: string;
+  public cultureFourteenValue: string;
+  public cultureFifteenValue: string;
 
   constructor() {}
 
@@ -80,6 +92,10 @@ export class DiversityComponent implements OnInit {
     const numDivFive = parseInt(this.diversityFiveValue, 10);
     const numDivSix = parseInt(this.diversitySixValue, 10);
     const numDivSeven = parseInt(this.diversitySevenValue, 10);
+    const numDivEight = parseInt(this.diversityEightValue, 10);
+    const numDivNine = parseInt(this.diversityNineValue, 10);
+    const numDivTen = parseInt(this.diversityTenValue, 10);
+
 
     const numEmpOne = parseInt(this.employmentOneValue, 10);
     const numEmpTwo = parseInt(this.employmentTwoValue, 10);
@@ -92,10 +108,16 @@ export class DiversityComponent implements OnInit {
     const numEmpNine = parseInt(this.employmentNineValue, 10);
     const numEmpTen = parseInt(this.employmentTenValue, 10);
     const numEmpEleven = parseInt(this.employmentElevenValue, 10);
+    const numEmpTwelve = parseInt(this.employmentTwelveValue, 10);
+    const numEmpThirteen = parseInt(this.employmentThirteenValue, 10);
+    const numEmpFourteen = parseInt(this.employmentFourteenValue, 10);
+
 
     const numCommOne = parseInt(this.communicationOneValue, 10);
     const numCommTwo = parseInt(this.communicationTwoValue, 10);
     const numCommThree = parseInt(this.communicationThreeValue, 10);
+    const numCommFour = parseInt(this.communicationFourValue, 10);
+    const numCommFive = parseInt(this.communicationFiveValue, 10);
 
     const numCulOne = parseInt(this.cultureOneValue, 10);
     const numCulTwo = parseInt(this.cultureTwoValue, 10);
@@ -110,25 +132,25 @@ export class DiversityComponent implements OnInit {
     const numCulEleven = parseInt(this.cultureElevenValue, 10);
     const numCulTwelve = parseInt(this.cultureTwelveValue, 10);
     const numCulThirteen = parseInt(this.cultureThirteenValue, 10);
+    const numCulFourteen = parseInt(this.cultureFourteenValue, 10);
+    const numCulFifteen = parseInt(this.cultureFifteenValue, 10);
 
-    this.diversityScore = numDivOne + numDivTwo + numDivThree + numDivFour + numDivFive + numDivSix + numDivSeven;
-    console.log('Your diversity score is ' + this.diversityScore + ' out of 35.');
+    this.diversityScore = numDivOne + numDivTwo + numDivThree + numDivFour + numDivFive + numDivSix + numDivSeven+ numDivEight + numDivNine + numDivTen;
+    console.log('Your diversity score is ' + this.diversityScore + ' out of 50.');
 
     this.employmentScore =
       numEmpOne + numEmpTwo + numEmpThree + numEmpFour + numEmpFive + numEmpSix +
-      numEmpSeven + numEmpEight + numEmpNine + numEmpTen + numEmpEleven;
-    console.log('Your employment score is ' + this.employmentScore + ' out of 55.');
+      numEmpSeven + numEmpEight + numEmpNine + numEmpTen + numEmpEleven + numEmpTwelve + numEmpThirteen + numEmpFourteen;
+    console.log('Your employment score is ' + this.employmentScore + ' out of 70.');
 
-    this.communicationScore = numCommOne + numCommTwo + numCommThree;
-    console.log('Your communication score is ' + this.communicationScore + ' out of 15.');
+    this.communicationScore = numCommOne + numCommTwo + numCommThree + numCommFour + numCommFive;
+    console.log('Your communication score is ' + this.communicationScore + ' out of 25.');
 
     this.cultureScore =
       numCulOne + numCulTwo + numCulThree + numCulFour + numCulFive + numCulSix +
       numCulSeven + numCulEight + numCulNine + numCulTen + numCulEleven +
-      numCulTwelve + numCulThirteen;
-    console.log('Your culture score is ' + this.cultureScore + ' out of 70.');
-
-
+      numCulTwelve + numCulThirteen + numCulFourteen + numCulFifteen;
+    console.log('Your culture score is ' + this.cultureScore + ' out of 75.');
   }
 
   goQuizTwo() {
